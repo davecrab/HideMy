@@ -110,6 +110,12 @@
 "settings.about.privacyTitle" = "Privacy Protection";
 "settings.about.privacyDescription" = "Faces are hidden using the selected privacy mode. Blur modes use pixelation that cannot be reversed or reconstructed.";
 
+// Feedback Section
+"settings.feedback.header" = "Feedback & Support";
+"settings.feedback.title" = "GitHub Repository";
+"settings.feedback.description" = "Submit feedback, report issues, or contribute";
+"settings.feedback.footer" = "Found a bug or have a feature request? We'd love to hear from you on GitHub!";
+
 // Alerts
 "alert.deleteAll.title" = "Delete All Blurred Photos?";
 "alert.deleteAll.message" = "This will permanently delete %d blurred photo(s) from your Photos library. This action cannot be undone.";

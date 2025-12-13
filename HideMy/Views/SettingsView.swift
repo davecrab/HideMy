@@ -184,6 +184,35 @@ struct SettingsView: View {
             } header: {
                 Text("settings.about.header")
             }
+
+            Section {
+                Link(destination: URL(string: "https://github.com/davecrab/HideMy")!) {
+                    HStack {
+                        Image(systemName: "chevron.left.forwardslash.chevron.right")
+                            .foregroundColor(.purple)
+                            .frame(width: 30)
+                            .accessibilityHidden(true)
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text("settings.feedback.title")
+                                .font(.headline)
+                                .foregroundColor(.primary)
+                            Text("settings.feedback.description")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
+                        Spacer()
+                        Image(systemName: "arrow.up.right.square")
+                            .foregroundColor(.secondary)
+                            .accessibilityHidden(true)
+                    }
+                    .padding(.vertical, 4)
+                }
+                .accessibilityLabel(Text("Open GitHub repository for feedback and issues"))
+            } header: {
+                Text("settings.feedback.header")
+            } footer: {
+                Text("settings.feedback.footer")
+            }
         }
         .navigationTitle(Text("settings.title"))
         .alert(
