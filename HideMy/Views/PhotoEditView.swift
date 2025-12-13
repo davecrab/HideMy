@@ -33,7 +33,7 @@ struct PhotoEditView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                Color.black.ignoresSafeArea()
+                Color(.systemBackground).ignoresSafeArea()
 
                 if let image = viewModel.displayImage {
                     VStack(spacing: 0) {
@@ -49,7 +49,6 @@ struct PhotoEditView: View {
                     }
                 } else {
                     ProgressView(String(localized: "photoEdit.loading"))
-                        .foregroundColor(.white)
                 }
             }
         }
