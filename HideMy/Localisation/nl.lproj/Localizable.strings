@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Dutch)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "Foto's";
+"navigation.settings" = "Instellingen";
+"navigation.save" = "Bewaar";
+"navigation.cancel" = "Annuleer";
+"navigation.done" = "Gereed";
+"navigation.back" = "Terug";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "Foto's";
+"photoGrid.noPhotos.title" = "Geen Foto's";
+"photoGrid.noPhotos.description" = "Je fotobibliotheek is leeg";
+"photoGrid.accessRequired.title" = "Fototoegang Vereist";
+"photoGrid.accessRequired.description" = "Geef toegang tot je foto's in Instellingen om deze app te gebruiken";
+"photoGrid.openSettings" = "Open Instellingen";
+"photoGrid.loading" = "Foto's laden...";
+"photoGrid.tooltip" = "Tik op een foto om deze te selecteren voor bewerking";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "Toegang tot Fotobibliotheek";
+"prePermission.browse.title" = "Blader Door Je Foto's";
+"prePermission.browse.description" = "Selecteer foto's uit je bibliotheek om gezichten en identiteiten te beschermen.";
+"prePermission.save.title" = "Bewaar Beschermde Foto's";
+"prePermission.save.description" = "Sla vervaagde foto's op als nieuwe kopieën in je bibliotheek.";
+"prePermission.privacy.title" = "Jouw Privacy is Belangrijk";
+"prePermission.privacy.description" = "Foto's worden op je apparaat verwerkt. Er wordt niets naar een server geüpload.";
+"prePermission.continue" = "Doorgaan";
+"prePermission.changeInSettings" = "Je kunt dit later wijzigen in Instellingen";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "Laden...";
+"photoEdit.saving" = "Bewaren...";
+"photoEdit.saved.title" = "Bewaard!";
+"photoEdit.saved.message" = "Foto succesvol bewaard";
+"photoEdit.error.title" = "Fout";
+"photoEdit.saveDialog.title" = "Foto Bewaren";
+"photoEdit.saveToPhotos" = "Kopie Bewaren in Foto's";
+"photoEdit.saveToFiles" = "Bewaar in Bestanden";
+"photoEdit.tooltip.blur" = "Tik op een gezicht om het te selecteren en druk dan op Vervagen";
+"photoEdit.tooltip.cover" = "Tik op een gezicht om het te selecteren en druk dan op Bedekken";
+"photoEdit.regions" = "%d gebieden";
+"photoEdit.selected" = "%d geselecteerd";
+"photoEdit.blurred" = "%d vervaagd";
+"photoEdit.intensity" = "Intensiteit:";
+"photoEdit.undo" = "Ongedaan";
+"photoEdit.selectAll" = "Alles";
+"photoEdit.clearSelection" = "Wissen";
+"photoEdit.resetZoom" = "Reset";
+"photoEdit.addRegion" = "Toevoegen";
+"photoEdit.blur" = "Vervagen";
+"photoEdit.cover" = "Bedekken";
+"photoEdit.delete" = "Verwijder";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "Instellingen";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "Privacymodus";
+"settings.privacyMode.footer" = "Kies hoe gezichten worden verborgen. Vervagingsmodi vernietigen gelaatstrekken onomkeerbaar. Kadermodi bedekken gezichten met een effen kleur.";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "Volledige Vervaging";
+"privacyMode.fullBlur.description" = "Pixeleren → Vervagen → Pixeleren (maximale privacy)";
+"privacyMode.blurNoFinalPixelate" = "Vervaging (Zonder Laatste Pixelering)";
+"privacyMode.blurNoFinalPixelate.description" = "Pixeleren → Vervagen (vloeiender uiterlijk)";
+"privacyMode.pixelateOnly" = "Alleen Pixeleren";
+"privacyMode.pixelateOnly.description" = "Alleen pixeleren (klassiek mozaïek)";
+"privacyMode.blackBox" = "Zwart Kader";
+"privacyMode.blackBox.description" = "Effen zwarte rechthoek";
+"privacyMode.whiteBox" = "Wit Kader";
+"privacyMode.whiteBox.description" = "Effen witte rechthoek";
+"privacyMode.customBox" = "Aangepast Kleurkader";
+"privacyMode.customBox.description" = "Effen kleur naar keuze";
+
+// Custom Color Section
+"settings.customColor.header" = "Aangepaste Kleur";
+"settings.customColor.footer" = "Selecteer een aangepaste kleur voor het gezichtsbedekkingskader.";
+"settings.customColor.picker" = "Kaderkleur";
+
+// Statistics Section
+"settings.statistics.header" = "Statistieken";
+"settings.statistics.blurredCount" = "Aantal Vervaagde Foto's";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "Vervaagde Foto's Beheren";
+"settings.managePhotos.footer" = "'Alle Vervaagde Foto's Verwijderen' verwijdert permanent de vervaagde kopieën die je hebt gemaakt uit je Fotobibliotheek. 'Volggeschiedenis Wissen' verwijdert alleen de volggegevens zonder foto's te verwijderen.";
+"settings.managePhotos.deleteAll" = "Alle Vervaagde Foto's Verwijderen uit Foto's";
+"settings.managePhotos.clearHistory" = "Volggeschiedenis Wissen";
+
+// History Section
+"settings.history.header" = "Geschiedenis";
+"settings.history.viewPhotos" = "Vervaagde Foto's Bekijken";
+
+// Tips Section
+"settings.tips.header" = "Tips";
+"settings.tips.resetTooltips" = "Tooltip-hints Resetten";
+"settings.tips.footer" = "Toon de nuttige tipbanners opnieuw in de hele app.";
+
+// About Section
+"settings.about.header" = "Over";
+"settings.about.privacyTitle" = "Privacybescherming";
+"settings.about.privacyDescription" = "Gezichten worden verborgen met de geselecteerde privacymodus. Vervagingsmodi gebruiken pixelering die niet kan worden teruggedraaid of gereconstrueerd.";
+
+// Alerts
+"alert.deleteAll.title" = "Alle Vervaagde Foto's Verwijderen?";
+"alert.deleteAll.message" = "Dit verwijdert permanent %d vervaagde foto('s) uit je Fotobibliotheek. Deze actie kan niet ongedaan worden gemaakt.";
+"alert.deleteAll.confirm" = "Alles Verwijderen";
+"alert.clearHistory.title" = "Volggeschiedenis Wissen?";
+"alert.clearHistory.message" = "Dit wist alleen de volggeschiedenis. De vervaagde foto's blijven in je Fotobibliotheek.";
+"alert.clearHistory.confirm" = "Wissen";
+"alert.deletionComplete.title" = "Verwijdering Voltooid";
+"alert.deletionComplete.message" = "%d foto('s) succesvol verwijderd. %d mislukt.";
+"alert.ok" = "OK";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "Vervaagde Foto's";
+"blurredPhotosList.itemTitle" = "Vervaagde Foto";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "Licht";
+"blurIntensity.medium" = "Gemiddeld";
+"blurIntensity.strong" = "Sterk";
+"blurIntensity.maximum" = "Maximaal";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "Instellingen";
+"accessibility.saveButton" = "Foto bewaren";
+"accessibility.undoButton" = "Laatste actie ongedaan maken";
+"accessibility.selectAllButton" = "Alle gebieden selecteren";
+"accessibility.clearSelectionButton" = "Selectie wissen";
+"accessibility.resetZoomButton" = "Zoom en positie resetten";
+"accessibility.addRegionButton" = "Aangepast gebied toevoegen";
+"accessibility.blurButton" = "Geselecteerde gebieden vervagen";
+"accessibility.coverButton" = "Geselecteerde gebieden bedekken";
+"accessibility.deleteRegionButton" = "Gebied verwijderen";
+"accessibility.dismissTooltip" = "Tip sluiten";
+"accessibility.photoThumbnail" = "Fotominiatuur";
+"accessibility.blurredPhotoThumbnail" = "Vervaagde fotominiatuur";
+"accessibility.faceRegion" = "Gezichtsgebied";
+"accessibility.selectedFaceRegion" = "Geselecteerd gezichtsgebied";
+"accessibility.blurredFaceRegion" = "Vervaagd gezichtsgebied";
+"accessibility.resizeHandle" = "Formaatgreep";
+"accessibility.intensitySlider" = "Vervagingsintensiteitsschuif";
+"accessibility.colorPicker" = "Kaderkleurkiezer";
+"accessibility.privacyModeOption" = "%@ privacymodus";
+"accessibility.selectedPrivacyMode" = "%@ privacymodus, geselecteerd";
+"accessibility.zoomLevel" = "Zoomniveau %d procent";
+"accessibility.continueButton" = "Doorgaan om fototoegang aan te vragen";
+"accessibility.openSettingsButton" = "Apparaatinstellingen openen";

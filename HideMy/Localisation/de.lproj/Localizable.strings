@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (German)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "Fotos";
+"navigation.settings" = "Einstellungen";
+"navigation.save" = "Speichern";
+"navigation.cancel" = "Abbrechen";
+"navigation.done" = "Fertig";
+"navigation.back" = "Zurück";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "Fotos";
+"photoGrid.noPhotos.title" = "Keine Fotos";
+"photoGrid.noPhotos.description" = "Deine Fotomediathek ist leer";
+"photoGrid.accessRequired.title" = "Fotozugriff Erforderlich";
+"photoGrid.accessRequired.description" = "Bitte erlaube den Zugriff auf deine Fotos in den Einstellungen, um diese App zu nutzen";
+"photoGrid.openSettings" = "Einstellungen Öffnen";
+"photoGrid.loading" = "Fotos werden geladen...";
+"photoGrid.tooltip" = "Tippe auf ein Foto, um es zur Bearbeitung auszuwählen";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "Zugriff auf Fotomediathek";
+"prePermission.browse.title" = "Deine Fotos Durchsuchen";
+"prePermission.browse.description" = "Wähle Fotos aus deiner Mediathek aus, um Gesichter und Identitäten zu schützen.";
+"prePermission.save.title" = "Geschützte Fotos Speichern";
+"prePermission.save.description" = "Speichere unkenntlich gemachte Fotos als neue Kopien in deiner Mediathek.";
+"prePermission.privacy.title" = "Deine Privatsphäre Zählt";
+"prePermission.privacy.description" = "Fotos werden auf deinem Gerät verarbeitet. Nichts wird auf einen Server hochgeladen.";
+"prePermission.continue" = "Weiter";
+"prePermission.changeInSettings" = "Du kannst dies später in den Einstellungen ändern";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "Laden...";
+"photoEdit.saving" = "Speichern...";
+"photoEdit.saved.title" = "Gespeichert!";
+"photoEdit.saved.message" = "Foto erfolgreich gespeichert";
+"photoEdit.error.title" = "Fehler";
+"photoEdit.saveDialog.title" = "Foto Speichern";
+"photoEdit.saveToPhotos" = "Kopie in Fotos Speichern";
+"photoEdit.saveToFiles" = "In Dateien Speichern";
+"photoEdit.tooltip.blur" = "Tippe auf ein Gesicht, um es auszuwählen, dann drücke Unschärfe";
+"photoEdit.tooltip.cover" = "Tippe auf ein Gesicht, um es auszuwählen, dann drücke Abdecken";
+"photoEdit.regions" = "%d Bereiche";
+"photoEdit.selected" = "%d ausgewählt";
+"photoEdit.blurred" = "%d unscharf";
+"photoEdit.intensity" = "Intensität:";
+"photoEdit.undo" = "Rückgängig";
+"photoEdit.selectAll" = "Alle";
+"photoEdit.clearSelection" = "Löschen";
+"photoEdit.resetZoom" = "Zurücks.";
+"photoEdit.addRegion" = "Hinzuf.";
+"photoEdit.blur" = "Unschärfe";
+"photoEdit.cover" = "Abdecken";
+"photoEdit.delete" = "Löschen";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "Einstellungen";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "Datenschutzmodus";
+"settings.privacyMode.footer" = "Wähle, wie Gesichter versteckt werden. Unschärfe-Modi zerstören Gesichtszüge unwiderruflich. Box-Modi bedecken Gesichter mit einer einfarbigen Fläche.";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "Volle Unschärfe";
+"privacyMode.fullBlur.description" = "Verpixeln → Unschärfe → Verpixeln (maximaler Datenschutz)";
+"privacyMode.blurNoFinalPixelate" = "Unschärfe (Ohne Finale Verpixelung)";
+"privacyMode.blurNoFinalPixelate.description" = "Verpixeln → Unschärfe (weicheres Aussehen)";
+"privacyMode.pixelateOnly" = "Nur Verpixeln";
+"privacyMode.pixelateOnly.description" = "Nur Verpixelung (klassisches Mosaik)";
+"privacyMode.blackBox" = "Schwarze Box";
+"privacyMode.blackBox.description" = "Einfarbig schwarzes Rechteck";
+"privacyMode.whiteBox" = "Weiße Box";
+"privacyMode.whiteBox.description" = "Einfarbig weißes Rechteck";
+"privacyMode.customBox" = "Benutzerdefinierte Farbbox";
+"privacyMode.customBox.description" = "Einfarbig in deiner Wunschfarbe";
+
+// Custom Color Section
+"settings.customColor.header" = "Benutzerdefinierte Farbe";
+"settings.customColor.footer" = "Wähle eine benutzerdefinierte Farbe für die Gesichtsabdeckung.";
+"settings.customColor.picker" = "Box-Farbe";
+
+// Statistics Section
+"settings.statistics.header" = "Statistiken";
+"settings.statistics.blurredCount" = "Anzahl Unkenntlich Gemachter Fotos";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "Bearbeitete Fotos Verwalten";
+"settings.managePhotos.footer" = "'Alle Bearbeiteten Fotos Löschen' löscht dauerhaft die unkenntlich gemachten Kopien aus deiner Fotomediathek. 'Verlauf Löschen' entfernt nur die Tracking-Daten, ohne Fotos zu löschen.";
+"settings.managePhotos.deleteAll" = "Alle Bearbeiteten Fotos aus Fotos Löschen";
+"settings.managePhotos.clearHistory" = "Tracking-Verlauf Löschen";
+
+// History Section
+"settings.history.header" = "Verlauf";
+"settings.history.viewPhotos" = "Bearbeitete Fotos Anzeigen";
+
+// Tips Section
+"settings.tips.header" = "Tipps";
+"settings.tips.resetTooltips" = "Tooltip-Hinweise Zurücksetzen";
+"settings.tips.footer" = "Zeige die hilfreichen Tipp-Banner in der gesamten App erneut an.";
+
+// About Section
+"settings.about.header" = "Über";
+"settings.about.privacyTitle" = "Datenschutz";
+"settings.about.privacyDescription" = "Gesichter werden mit dem ausgewählten Datenschutzmodus versteckt. Unschärfe-Modi verwenden Verpixelung, die nicht rückgängig gemacht oder rekonstruiert werden kann.";
+
+// Alerts
+"alert.deleteAll.title" = "Alle Bearbeiteten Fotos Löschen?";
+"alert.deleteAll.message" = "Dies löscht dauerhaft %d bearbeitete(s) Foto(s) aus deiner Fotomediathek. Diese Aktion kann nicht rückgängig gemacht werden.";
+"alert.deleteAll.confirm" = "Alle Löschen";
+"alert.clearHistory.title" = "Tracking-Verlauf Löschen?";
+"alert.clearHistory.message" = "Dies löscht nur den Tracking-Verlauf. Die bearbeiteten Fotos bleiben in deiner Fotomediathek.";
+"alert.clearHistory.confirm" = "Löschen";
+"alert.deletionComplete.title" = "Löschung Abgeschlossen";
+"alert.deletionComplete.message" = "%d Foto(s) erfolgreich gelöscht. %d fehlgeschlagen.";
+"alert.ok" = "OK";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "Bearbeitete Fotos";
+"blurredPhotosList.itemTitle" = "Bearbeitetes Foto";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "Leicht";
+"blurIntensity.medium" = "Mittel";
+"blurIntensity.strong" = "Stark";
+"blurIntensity.maximum" = "Maximum";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "Einstellungen";
+"accessibility.saveButton" = "Foto speichern";
+"accessibility.undoButton" = "Letzte Aktion rückgängig machen";
+"accessibility.selectAllButton" = "Alle Bereiche auswählen";
+"accessibility.clearSelectionButton" = "Auswahl aufheben";
+"accessibility.resetZoomButton" = "Zoom und Position zurücksetzen";
+"accessibility.addRegionButton" = "Benutzerdefinierten Bereich hinzufügen";
+"accessibility.blurButton" = "Ausgewählte Bereiche unscharf machen";
+"accessibility.coverButton" = "Ausgewählte Bereiche abdecken";
+"accessibility.deleteRegionButton" = "Bereich löschen";
+"accessibility.dismissTooltip" = "Tipp schließen";
+"accessibility.photoThumbnail" = "Foto-Miniaturansicht";
+"accessibility.blurredPhotoThumbnail" = "Miniaturansicht des bearbeiteten Fotos";
+"accessibility.faceRegion" = "Gesichtsbereich";
+"accessibility.selectedFaceRegion" = "Ausgewählter Gesichtsbereich";
+"accessibility.blurredFaceRegion" = "Unkenntlich gemachter Gesichtsbereich";
+"accessibility.resizeHandle" = "Größenänderungs-Griff";
+"accessibility.intensitySlider" = "Schieberegler für Unschärfe-Intensität";
+"accessibility.colorPicker" = "Farbwähler für Box";
+"accessibility.privacyModeOption" = "%@ Datenschutzmodus";
+"accessibility.selectedPrivacyMode" = "%@ Datenschutzmodus, ausgewählt";
+"accessibility.zoomLevel" = "Zoomstufe %d Prozent";
+"accessibility.continueButton" = "Weiter, um Fotozugriff anzufordern";
+"accessibility.openSettingsButton" = "Geräteeinstellungen öffnen";

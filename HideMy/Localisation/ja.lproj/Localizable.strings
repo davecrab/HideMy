@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Japanese)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "写真";
+"navigation.settings" = "設定";
+"navigation.save" = "保存";
+"navigation.cancel" = "キャンセル";
+"navigation.done" = "完了";
+"navigation.back" = "戻る";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "写真";
+"photoGrid.noPhotos.title" = "写真がありません";
+"photoGrid.noPhotos.description" = "フォトライブラリが空です";
+"photoGrid.accessRequired.title" = "写真へのアクセスが必要です";
+"photoGrid.accessRequired.description" = "このアプリを使用するには、設定で写真へのアクセスを許可してください";
+"photoGrid.openSettings" = "設定を開く";
+"photoGrid.loading" = "写真を読み込み中...";
+"photoGrid.tooltip" = "写真をタップして編集用に選択";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "フォトライブラリへのアクセス";
+"prePermission.browse.title" = "写真を閲覧";
+"prePermission.browse.description" = "ライブラリから写真を選択して、顔や身元を保護します。";
+"prePermission.save.title" = "保護された写真を保存";
+"prePermission.save.description" = "ぼかした写真を新しいコピーとしてライブラリに保存します。";
+"prePermission.privacy.title" = "プライバシーを大切に";
+"prePermission.privacy.description" = "写真はデバイス上で処理されます。サーバーにはアップロードされません。";
+"prePermission.continue" = "続ける";
+"prePermission.changeInSettings" = "後で設定から変更できます";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "読み込み中...";
+"photoEdit.saving" = "保存中...";
+"photoEdit.saved.title" = "保存しました!";
+"photoEdit.saved.message" = "写真が正常に保存されました";
+"photoEdit.error.title" = "エラー";
+"photoEdit.saveDialog.title" = "写真を保存";
+"photoEdit.saveToPhotos" = "写真にコピーを保存";
+"photoEdit.saveToFiles" = "ファイルに保存";
+"photoEdit.tooltip.blur" = "顔をタップして選択し、ぼかすを押してください";
+"photoEdit.tooltip.cover" = "顔をタップして選択し、カバーを押してください";
+"photoEdit.regions" = "%d 領域";
+"photoEdit.selected" = "%d 選択中";
+"photoEdit.blurred" = "%d ぼかし済み";
+"photoEdit.intensity" = "強度:";
+"photoEdit.undo" = "元に戻す";
+"photoEdit.selectAll" = "全選択";
+"photoEdit.clearSelection" = "解除";
+"photoEdit.resetZoom" = "リセット";
+"photoEdit.addRegion" = "追加";
+"photoEdit.blur" = "ぼかす";
+"photoEdit.cover" = "カバー";
+"photoEdit.delete" = "削除";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "設定";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "プライバシーモード";
+"settings.privacyMode.footer" = "顔を隠す方法を選択してください。ぼかしモードは顔の特徴を不可逆的に破壊します。ボックスモードは顔を単色で覆います。";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "フルぼかし";
+"privacyMode.fullBlur.description" = "モザイク - ぼかし - モザイク (最大のプライバシー)";
+"privacyMode.blurNoFinalPixelate" = "ぼかし (最終モザイクなし)";
+"privacyMode.blurNoFinalPixelate.description" = "モザイク - ぼかし (滑らかな見た目)";
+"privacyMode.pixelateOnly" = "モザイクのみ";
+"privacyMode.pixelateOnly.description" = "モザイクのみ (クラシックなモザイク)";
+"privacyMode.blackBox" = "黒いボックス";
+"privacyMode.blackBox.description" = "黒一色の長方形";
+"privacyMode.whiteBox" = "白いボックス";
+"privacyMode.whiteBox.description" = "白一色の長方形";
+"privacyMode.customBox" = "カスタムカラーボックス";
+"privacyMode.customBox.description" = "お好みの色の単色";
+
+// Custom Color Section
+"settings.customColor.header" = "カスタムカラー";
+"settings.customColor.footer" = "顔を覆うボックスのカスタムカラーを選択してください。";
+"settings.customColor.picker" = "ボックスの色";
+
+// Statistics Section
+"settings.statistics.header" = "統計";
+"settings.statistics.blurredCount" = "ぼかした写真の数";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "ぼかした写真を管理";
+"settings.managePhotos.footer" = "すべてのぼかした写真を削除は、フォトライブラリから作成したぼかしコピーを完全に削除します。追跡履歴をクリアは、写真を削除せずに追跡データのみを削除します。";
+"settings.managePhotos.deleteAll" = "すべてのぼかした写真を削除";
+"settings.managePhotos.clearHistory" = "追跡履歴をクリア";
+
+// History Section
+"settings.history.header" = "履歴";
+"settings.history.viewPhotos" = "ぼかした写真を表示";
+
+// Tips Section
+"settings.tips.header" = "ヒント";
+"settings.tips.resetTooltips" = "ツールチップをリセット";
+"settings.tips.footer" = "アプリ全体で役立つヒントバナーを再度表示します。";
+
+// About Section
+"settings.about.header" = "このアプリについて";
+"settings.about.privacyTitle" = "プライバシー保護";
+"settings.about.privacyDescription" = "選択したプライバシーモードを使用して顔を隠します。ぼかしモードは、元に戻したり再構築したりできないモザイク処理を使用します。";
+
+// Alerts
+"alert.deleteAll.title" = "すべてのぼかした写真を削除しますか?";
+"alert.deleteAll.message" = "フォトライブラリから%d枚のぼかした写真が完全に削除されます。この操作は元に戻せません。";
+"alert.deleteAll.confirm" = "すべて削除";
+"alert.clearHistory.title" = "追跡履歴をクリアしますか?";
+"alert.clearHistory.message" = "追跡履歴のみがクリアされます。ぼかした写真はフォトライブラリに残ります。";
+"alert.clearHistory.confirm" = "クリア";
+"alert.deletionComplete.title" = "削除完了";
+"alert.deletionComplete.message" = "%d枚の写真が正常に削除されました。%d枚が失敗しました。";
+"alert.ok" = "OK";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "ぼかした写真";
+"blurredPhotosList.itemTitle" = "ぼかした写真";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "弱";
+"blurIntensity.medium" = "中";
+"blurIntensity.strong" = "強";
+"blurIntensity.maximum" = "最大";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "設定";
+"accessibility.saveButton" = "写真を保存";
+"accessibility.undoButton" = "最後の操作を元に戻す";
+"accessibility.selectAllButton" = "すべての領域を選択";
+"accessibility.clearSelectionButton" = "選択を解除";
+"accessibility.resetZoomButton" = "ズームと位置をリセット";
+"accessibility.addRegionButton" = "カスタム領域を追加";
+"accessibility.blurButton" = "選択した領域をぼかす";
+"accessibility.coverButton" = "選択した領域をカバー";
+"accessibility.deleteRegionButton" = "領域を削除";
+"accessibility.dismissTooltip" = "ヒントを閉じる";
+"accessibility.photoThumbnail" = "写真のサムネイル";
+"accessibility.blurredPhotoThumbnail" = "ぼかした写真のサムネイル";
+"accessibility.faceRegion" = "顔の領域";
+"accessibility.selectedFaceRegion" = "選択された顔の領域";
+"accessibility.blurredFaceRegion" = "ぼかされた顔の領域";
+"accessibility.resizeHandle" = "サイズ変更ハンドル";
+"accessibility.intensitySlider" = "ぼかし強度スライダー";
+"accessibility.colorPicker" = "ボックス色ピッカー";
+"accessibility.privacyModeOption" = "%@ プライバシーモード";
+"accessibility.selectedPrivacyMode" = "%@ プライバシーモード、選択中";
+"accessibility.zoomLevel" = "ズームレベル %d パーセント";
+"accessibility.continueButton" = "続けて写真へのアクセスをリクエスト";
+"accessibility.openSettingsButton" = "デバイス設定を開く";

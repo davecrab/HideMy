@@ -6,12 +6,14 @@ struct PhotoEditView: View {
     @Environment(\.dismiss) private var dismiss
 
     @StateObject private var viewModel: PhotoEditViewModel
+    @StateObject private var privacySettings = PrivacySettings.shared
 
     @State private var showingSaveOptions = false
     @State private var showingError = false
     @State private var errorMessage = ""
     @State private var isSaving = false
     @State private var showingSaveSuccess = false
+    @State private var sessionPrivacyMode: PrivacyMode?
 
     // Zoom and pan state
     @State private var scale: CGFloat = 1.0
@@ -24,57 +26,198 @@ struct PhotoEditView: View {
         _viewModel = StateObject(wrappedValue: PhotoEditViewModel(asset: asset))
     }
 
+    private var currentPrivacyMode: PrivacyMode {
+        sessionPrivacyMode ?? privacySettings.privacyMode
+    }
+
     var body: some View {
         GeometryReader { geometry in
             ZStack {
                 Color.black.ignoresSafeArea()
 
                 if let image = viewModel.displayImage {
-                    imageEditorView(image: image, geometry: geometry)
+                    VStack(spacing: 0) {
+                        TooltipBanner(
+                            icon: "faceid",
+                            message: currentPrivacyMode.isBoxMode
+                                ? "photoEdit.tooltip.cover" : "photoEdit.tooltip.blur",
+                            tooltipKey: .photoEditBlur,
+                            backgroundColor: .purple
+                        )
+
+                        imageEditorView(image: image, geometry: geometry)
+                    }
                 } else {
-                    ProgressView("Loading...")
+                    ProgressView(String(localized: "photoEdit.loading"))
                         .foregroundColor(.white)
                 }
             }
         }
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
+            ToolbarItem(placement: .principal) {
+                Menu {
+                    ForEach(PrivacyMode.allCases) { mode in
+                        Button {
+                            sessionPrivacyMode = mode
+                        } label: {
+                            HStack {
+                                Image(systemName: mode.iconName)
+                                Text(mode.localizedName)
+                                if currentPrivacyMode == mode {
+                                    Image(systemName: "checkmark")
+                                }
+                            }
+                        }
+                    }
+                } label: {
+                    HStack(spacing: 4) {
+                        Image(systemName: currentPrivacyMode.iconName)
+                            .foregroundColor(currentPrivacyMode.isBoxMode ? .purple : .blue)
+                        Text(currentPrivacyMode.localizedName)
+                            .font(.subheadline)
+                        Image(systemName: "chevron.down")
+                            .font(.caption2)
+                    }
+                }
+                .accessibilityLabel(Text("Privacy mode: \(currentPrivacyMode.localizedName)"))
+            }
+
             ToolbarItem(placement: .navigationBarTrailing) {
-                Button("Save") {
+                Button("navigation.save") {
                     showingSaveOptions = true
                 }
                 .disabled(viewModel.blurredRegionIds.isEmpty || isSaving)
+                .accessibilityLabel(Text("accessibility.saveButton"))
+            }
+
+            ToolbarItemGroup(placement: .bottomBar) {
+                Button {
+                    viewModel.undo()
+                } label: {
+                    VStack(spacing: 4) {
+                        Image(systemName: "arrow.uturn.backward")
+                            .font(.title3)
+                        // Text("photoEdit.undo")
+                        //     .font(.caption2)
+                    }
+                }
+                .disabled(!viewModel.canUndo)
+                .accessibilityLabel(Text("accessibility.undoButton"))
+
+                Button {
+                    viewModel.clearSelection()
+                } label: {
+                    VStack(spacing: 4) {
+                        Image(systemName: "xmark.circle")
+                            .font(.title3)
+                        // Text("photoEdit.clearSelection")
+                        //     .font(.caption2)
+                    }
+                }
+                .disabled(viewModel.selectedRegionIds.isEmpty)
+                .accessibilityLabel(Text("accessibility.clearSelectionButton"))
+
+                Button {
+                    withAnimation(.easeInOut(duration: 0.2)) {
+                        scale = 1.0
+                        lastScale = 1.0
+                        offset = .zero
+                        lastOffset = .zero
+                    }
+                } label: {
+                    VStack(spacing: 4) {
+                        Image(systemName: "arrow.up.left.and.arrow.down.right")
+                            .font(.title3)
+                        // Text("photoEdit.resetZoom")
+                        //     .font(.caption2)
+                    }
+                }
+                .disabled(scale == 1.0 && offset == .zero)
+                .accessibilityLabel(Text("accessibility.resetZoomButton"))
+
+                Spacer()
+
+                Button {
+                    viewModel.selectAll()
+                } label: {
+                    VStack(spacing: 4) {
+                        Image(systemName: "checkmark.circle.fill")
+                            .font(.title3)
+                        // Text("photoEdit.selectAll")
+                        //     .font(.caption2)
+                    }
+                }
+                .disabled(viewModel.regions.isEmpty || viewModel.allRegionsSelected)
+                .accessibilityLabel(Text("accessibility.selectAllButton"))
+
+                Button {
+                    viewModel.addCustomRegion(at: CGPoint(x: 0.5, y: 0.5))
+                } label: {
+                    VStack(spacing: 4) {
+                        Image(systemName: "plus.rectangle.on.rectangle")
+                            .font(.title3)
+                        // Text("photoEdit.addRegion")
+                        //     .font(.caption2)
+                    }
+                }
+                .accessibilityLabel(Text("accessibility.addRegionButton"))
+
+                Button {
+                    viewModel.blurSelectedRegions(mode: currentPrivacyMode)
+                } label: {
+                    VStack(spacing: 4) {
+                        Image(
+                            systemName: currentPrivacyMode.isBoxMode
+                                ? "rectangle.fill" : "eye.slash.fill"
+                        )
+                        .font(.title3)
+                        // Text(
+                        //     currentPrivacyMode.isBoxMode
+                        //         ? "photoEdit.cover" : "photoEdit.blur"
+                        // )
+                        .font(.caption2)
+                    }
+                }
+                .disabled(viewModel.selectedRegionIds.isEmpty)
+                .foregroundColor(viewModel.selectedRegionIds.isEmpty ? .gray : .red)
+                .accessibilityLabel(
+                    Text(
+                        currentPrivacyMode.isBoxMode
+                            ? "accessibility.coverButton" : "accessibility.blurButton"))
             }
         }
         .safeAreaInset(edge: .bottom) {
             toolbarView
         }
-        .confirmationDialog("Save Photo", isPresented: $showingSaveOptions) {
-            Button("Save Copy to Photos") {
+        .confirmationDialog(
+            String(localized: "photoEdit.saveDialog.title"), isPresented: $showingSaveOptions
+        ) {
+            Button("photoEdit.saveToPhotos") {
                 saveToPhotos()
             }
-            Button("Save to Files") {
+            Button("photoEdit.saveToFiles") {
                 saveToFiles()
             }
-            Button("Cancel", role: .cancel) {}
+            Button("navigation.cancel", role: .cancel) {}
         }
-        .alert("Error", isPresented: $showingError) {
-            Button("OK", role: .cancel) {}
+        .alert(String(localized: "photoEdit.error.title"), isPresented: $showingError) {
+            Button("alert.ok", role: .cancel) {}
         } message: {
             Text(errorMessage)
         }
-        .alert("Saved!", isPresented: $showingSaveSuccess) {
-            Button("OK", role: .cancel) {
+        .alert(String(localized: "photoEdit.saved.title"), isPresented: $showingSaveSuccess) {
+            Button("alert.ok", role: .cancel) {
                 dismiss()
             }
         } message: {
-            Text("Photo saved successfully")
+            Text("photoEdit.saved.message")
         }
         .overlay {
             if isSaving {
                 Color.black.opacity(0.5)
                     .ignoresSafeArea()
-                ProgressView("Saving...")
+                ProgressView(String(localized: "photoEdit.saving"))
                     .padding()
                     .background(Color(.systemBackground))
                     .cornerRadius(10)
@@ -237,120 +380,41 @@ struct PhotoEditView: View {
         VStack(spacing: 10) {
             // Status
             HStack(spacing: 16) {
-                Label("\(viewModel.regions.count) regions", systemImage: "square.on.square")
                 Label(
-                    "\(viewModel.selectedRegionIds.count) selected", systemImage: "checkmark.circle"
-                )
-                Label("\(viewModel.blurredRegionIds.count) blurred", systemImage: "eye.slash")
+                    String(
+                        format: NSLocalizedString("photoEdit.regions", comment: ""),
+                        viewModel.regions.count), systemImage: "square.on.square")
+                Label(
+                    String(
+                        format: NSLocalizedString("photoEdit.selected", comment: ""),
+                        viewModel.selectedRegionIds.count), systemImage: "checkmark.circle")
+                Label(
+                    String(
+                        format: NSLocalizedString("photoEdit.blurred", comment: ""),
+                        viewModel.blurredRegionIds.count), systemImage: "eye.slash")
             }
             .font(.caption)
             .foregroundColor(.secondary)
+            .accessibilityElement(children: .combine)
 
-            // Intensity slider
-            HStack {
-                Text("Blur:")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                    .frame(width: 35, alignment: .leading)
+            // Intensity slider (only for blur modes)
+            if !currentPrivacyMode.isBoxMode {
+                HStack {
+                    Text("photoEdit.intensity")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .frame(width: 70, alignment: .leading)
 
-                Slider(value: $viewModel.blurIntensity, in: 0.25...1.0, step: 0.05)
+                    Slider(value: $viewModel.blurIntensity, in: 0.25...1.0, step: 0.05)
+                        .accessibilityLabel(Text("accessibility.intensitySlider"))
 
-                Text("\(Int(viewModel.blurIntensity * 100))%")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-                    .frame(width: 40, alignment: .trailing)
+                    Text("\(Int(viewModel.blurIntensity * 100))%")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .frame(width: 40, alignment: .trailing)
+                }
             }
 
-            // Action buttons
-            HStack(spacing: 16) {
-                Button {
-                    viewModel.undo()
-                } label: {
-                    VStack(spacing: 4) {
-                        Image(systemName: "arrow.uturn.backward")
-                            .font(.title3)
-                        Text("Undo")
-                            .font(.caption2)
-                    }
-                }
-                .disabled(!viewModel.canUndo)
-
-                Spacer()
-
-                Button {
-                    viewModel.selectAll()
-                } label: {
-                    VStack(spacing: 4) {
-                        Image(systemName: "checkmark.circle.fill")
-                            .font(.title3)
-                        Text("All")
-                            .font(.caption2)
-                    }
-                }
-                .disabled(viewModel.regions.isEmpty || viewModel.allRegionsSelected)
-
-                Spacer()
-
-                Button {
-                    viewModel.clearSelection()
-                } label: {
-                    VStack(spacing: 4) {
-                        Image(systemName: "xmark.circle")
-                            .font(.title3)
-                        Text("Clear")
-                            .font(.caption2)
-                    }
-                }
-                .disabled(viewModel.selectedRegionIds.isEmpty)
-
-                Spacer()
-
-                Button {
-                    withAnimation(.easeInOut(duration: 0.2)) {
-                        scale = 1.0
-                        lastScale = 1.0
-                        offset = .zero
-                        lastOffset = .zero
-                    }
-                } label: {
-                    VStack(spacing: 4) {
-                        Image(systemName: "arrow.up.left.and.arrow.down.right")
-                            .font(.title3)
-                        Text("Reset")
-                            .font(.caption2)
-                    }
-                }
-                .disabled(scale == 1.0 && offset == .zero)
-
-                Spacer()
-
-                Button {
-                    viewModel.addCustomRegion(at: CGPoint(x: 0.5, y: 0.5))
-                } label: {
-                    VStack(spacing: 4) {
-                        Image(systemName: "plus.rectangle.on.rectangle")
-                            .font(.title3)
-                        Text("Add")
-                            .font(.caption2)
-                    }
-                }
-
-                Spacer()
-
-                Button {
-                    viewModel.blurSelectedRegions()
-                } label: {
-                    VStack(spacing: 4) {
-                        Image(systemName: "eye.slash.fill")
-                            .font(.title3)
-                        Text("Blur")
-                            .font(.caption2)
-                    }
-                }
-                .disabled(viewModel.selectedRegionIds.isEmpty)
-                .foregroundColor(viewModel.selectedRegionIds.isEmpty ? .gray : .red)
-            }
-            .padding(.horizontal, 16)
         }
         .padding(.horizontal)
         .padding(.vertical, 12)
@@ -747,7 +811,7 @@ class PhotoEditViewModel: ObservableObject {
 
     // MARK: - Blur
 
-    func blurSelectedRegions() {
+    func blurSelectedRegions(mode: PrivacyMode = PrivacySettings.shared.privacyMode) {
         guard let currentImage = displayImage, !selectedRegionIds.isEmpty else { return }
 
         // Save state for undo
@@ -763,7 +827,8 @@ class PhotoEditViewModel: ObservableObject {
         if let blurredImage = ImageBlurrer.applySecureBlur(
             to: currentImage,
             regions: blurData,
-            intensity: blurIntensity
+            intensity: blurIntensity,
+            mode: mode
         ) {
             displayImage = blurredImage
             blurredRegionIds.formUnion(selectedRegionIds)

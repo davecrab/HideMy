@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Turkish)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "Fotoğraflar";
+"navigation.settings" = "Ayarlar";
+"navigation.save" = "Kaydet";
+"navigation.cancel" = "İptal";
+"navigation.done" = "Bitti";
+"navigation.back" = "Geri";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "Fotoğraflar";
+"photoGrid.noPhotos.title" = "Fotoğraf Yok";
+"photoGrid.noPhotos.description" = "Fotoğraf kitaplığınız boş";
+"photoGrid.accessRequired.title" = "Fotoğraf Erişimi Gerekli";
+"photoGrid.accessRequired.description" = "Bu uygulamayı kullanmak için lütfen Ayarlar'dan fotoğraflarınıza erişim izni verin";
+"photoGrid.openSettings" = "Ayarları Aç";
+"photoGrid.loading" = "Fotoğraflar Yükleniyor...";
+"photoGrid.tooltip" = "Düzenlemek için bir fotoğrafa dokunun";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "Fotoğraf Kitaplığı Erişimi";
+"prePermission.browse.title" = "Fotoğraflarınıza Göz Atın";
+"prePermission.browse.description" = "Yüzleri ve kimlikleri korumak için kitaplığınızdan fotoğraf seçin.";
+"prePermission.save.title" = "Korunan Fotoğrafları Kaydedin";
+"prePermission.save.description" = "Bulanıklaştırılmış fotoğrafları yeni kopyalar olarak kitaplığınıza kaydedin.";
+"prePermission.privacy.title" = "Gizliliğiniz Önemli";
+"prePermission.privacy.description" = "Fotoğraflar cihazınızda işlenir. Hiçbir şey sunucuya yüklenmez.";
+"prePermission.continue" = "Devam";
+"prePermission.changeInSettings" = "Bunu daha sonra Ayarlar'dan değiştirebilirsiniz";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "Yükleniyor...";
+"photoEdit.saving" = "Kaydediliyor...";
+"photoEdit.saved.title" = "Kaydedildi!";
+"photoEdit.saved.message" = "Fotoğraf başarıyla kaydedildi";
+"photoEdit.error.title" = "Hata";
+"photoEdit.saveDialog.title" = "Fotoğrafı Kaydet";
+"photoEdit.saveToPhotos" = "Fotoğraflara Kopya Kaydet";
+"photoEdit.saveToFiles" = "Dosyalara Kaydet";
+"photoEdit.tooltip.blur" = "Seçmek için bir yüze dokunun, ardından Bulanıklaştır'a basın";
+"photoEdit.tooltip.cover" = "Seçmek için bir yüze dokunun, ardından Kapat'a basın";
+"photoEdit.regions" = "%d bölge";
+"photoEdit.selected" = "%d seçili";
+"photoEdit.blurred" = "%d bulanık";
+"photoEdit.intensity" = "Yoğunluk:";
+"photoEdit.undo" = "Geri Al";
+"photoEdit.selectAll" = "Tümü";
+"photoEdit.clearSelection" = "Temizle";
+"photoEdit.resetZoom" = "Sıfırla";
+"photoEdit.addRegion" = "Ekle";
+"photoEdit.blur" = "Bulanık";
+"photoEdit.cover" = "Kapat";
+"photoEdit.delete" = "Sil";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "Ayarlar";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "Gizlilik Modu";
+"settings.privacyMode.footer" = "Yüzlerin nasıl gizleneceğini seçin. Bulanıklaştırma modları yüz özelliklerini geri dönüşü olmayacak şekilde yok eder. Kutu modları yüzleri düz renkle kapatır.";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "Tam Bulanıklaştırma";
+"privacyMode.fullBlur.description" = "Pikselleştir → Bulanıklaştır → Pikselleştir (maksimum gizlilik)";
+"privacyMode.blurNoFinalPixelate" = "Bulanıklaştırma (Son Pikselleştirme Yok)";
+"privacyMode.blurNoFinalPixelate.description" = "Pikselleştir → Bulanıklaştır (daha yumuşak görünüm)";
+"privacyMode.pixelateOnly" = "Sadece Pikselleştir";
+"privacyMode.pixelateOnly.description" = "Sadece pikselleştirme (klasik mozaik)";
+"privacyMode.blackBox" = "Siyah Kutu";
+"privacyMode.blackBox.description" = "Düz siyah dikdörtgen";
+"privacyMode.whiteBox" = "Beyaz Kutu";
+"privacyMode.whiteBox.description" = "Düz beyaz dikdörtgen";
+"privacyMode.customBox" = "Özel Renkli Kutu";
+"privacyMode.customBox.description" = "Seçtiğiniz düz renk";
+
+// Custom Color Section
+"settings.customColor.header" = "Özel Renk";
+"settings.customColor.footer" = "Yüz kapatma kutusu için özel bir renk seçin.";
+"settings.customColor.picker" = "Kutu Rengi";
+
+// Statistics Section
+"settings.statistics.header" = "İstatistikler";
+"settings.statistics.blurredCount" = "Bulanıklaştırılmış Fotoğraf Sayısı";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "Bulanık Fotoğrafları Yönet";
+"settings.managePhotos.footer" = "'Tüm Bulanık Fotoğrafları Sil' Fotoğraf Kitaplığınızdan oluşturduğunuz bulanık kopyaları kalıcı olarak siler. 'İzleme Geçmişini Temizle' yalnızca izleme verilerini kaldırır, fotoğrafları silmez.";
+"settings.managePhotos.deleteAll" = "Tüm Bulanık Fotoğrafları Fotoğraflardan Sil";
+"settings.managePhotos.clearHistory" = "İzleme Geçmişini Temizle";
+
+// History Section
+"settings.history.header" = "Geçmiş";
+"settings.history.viewPhotos" = "Bulanık Fotoğrafları Görüntüle";
+
+// Tips Section
+"settings.tips.header" = "İpuçları";
+"settings.tips.resetTooltips" = "İpucu Bildirimlerini Sıfırla";
+"settings.tips.footer" = "Uygulama genelinde yararlı ipucu başlıklarını tekrar göster.";
+
+// About Section
+"settings.about.header" = "Hakkında";
+"settings.about.privacyTitle" = "Gizlilik Koruması";
+"settings.about.privacyDescription" = "Yüzler seçilen gizlilik modu kullanılarak gizlenir. Bulanıklaştırma modları geri alınamayan veya yeniden oluşturulamayan pikselleştirme kullanır.";
+
+// Alerts
+"alert.deleteAll.title" = "Tüm Bulanık Fotoğraflar Silinsin mi?";
+"alert.deleteAll.message" = "Bu, Fotoğraf Kitaplığınızdan %d bulanık fotoğrafı kalıcı olarak silecektir. Bu işlem geri alınamaz.";
+"alert.deleteAll.confirm" = "Tümünü Sil";
+"alert.clearHistory.title" = "İzleme Geçmişi Temizlensin mi?";
+"alert.clearHistory.message" = "Bu yalnızca izleme geçmişini temizleyecektir. Bulanık fotoğraflar Fotoğraf Kitaplığınızda kalacaktır.";
+"alert.clearHistory.confirm" = "Temizle";
+"alert.deletionComplete.title" = "Silme Tamamlandı";
+"alert.deletionComplete.message" = "%d fotoğraf başarıyla silindi. %d başarısız.";
+"alert.ok" = "Tamam";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "Bulanık Fotoğraflar";
+"blurredPhotosList.itemTitle" = "Bulanık Fotoğraf";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "Hafif";
+"blurIntensity.medium" = "Orta";
+"blurIntensity.strong" = "Güçlü";
+"blurIntensity.maximum" = "Maksimum";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "Ayarlar";
+"accessibility.saveButton" = "Fotoğrafı kaydet";
+"accessibility.undoButton" = "Son işlemi geri al";
+"accessibility.selectAllButton" = "Tüm bölgeleri seç";
+"accessibility.clearSelectionButton" = "Seçimi temizle";
+"accessibility.resetZoomButton" = "Yakınlaştırma ve konumu sıfırla";
+"accessibility.addRegionButton" = "Özel bölge ekle";
+"accessibility.blurButton" = "Seçili bölgeleri bulanıklaştır";
+"accessibility.coverButton" = "Seçili bölgeleri kapat";
+"accessibility.deleteRegionButton" = "Bölgeyi sil";
+"accessibility.dismissTooltip" = "İpucunu kapat";
+"accessibility.photoThumbnail" = "Fotoğraf küçük resmi";
+"accessibility.blurredPhotoThumbnail" = "Bulanık fotoğraf küçük resmi";
+"accessibility.faceRegion" = "Yüz bölgesi";
+"accessibility.selectedFaceRegion" = "Seçili yüz bölgesi";
+"accessibility.blurredFaceRegion" = "Bulanık yüz bölgesi";
+"accessibility.resizeHandle" = "Yeniden boyutlandırma tutamacı";
+"accessibility.intensitySlider" = "Bulanıklaştırma yoğunluğu kaydırıcısı";
+"accessibility.colorPicker" = "Kutu rengi seçici";
+"accessibility.privacyModeOption" = "%@ gizlilik modu";
+"accessibility.selectedPrivacyMode" = "%@ gizlilik modu, seçili";
+"accessibility.zoomLevel" = "Yakınlaştırma seviyesi yüzde %d";
+"accessibility.continueButton" = "Fotoğraf erişimi istemek için devam et";
+"accessibility.openSettingsButton" = "Cihaz ayarlarını aç";

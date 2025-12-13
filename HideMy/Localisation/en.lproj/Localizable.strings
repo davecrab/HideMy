@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (English)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "Photos";
+"navigation.settings" = "Settings";
+"navigation.save" = "Save";
+"navigation.cancel" = "Cancel";
+"navigation.done" = "Done";
+"navigation.back" = "Back";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "Photos";
+"photoGrid.noPhotos.title" = "No Photos";
+"photoGrid.noPhotos.description" = "Your photo library is empty";
+"photoGrid.accessRequired.title" = "Photo Access Required";
+"photoGrid.accessRequired.description" = "Please grant access to your photos in Settings to use this app";
+"photoGrid.openSettings" = "Open Settings";
+"photoGrid.loading" = "Loading Photos...";
+"photoGrid.tooltip" = "Tap a photo to select it for editing";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "Photo Library Access";
+"prePermission.browse.title" = "Browse Your Photos";
+"prePermission.browse.description" = "Select photos from your library to protect faces and identities.";
+"prePermission.save.title" = "Save Protected Photos";
+"prePermission.save.description" = "Save blurred photos back to your library as new copies.";
+"prePermission.privacy.title" = "Your Privacy Matters";
+"prePermission.privacy.description" = "Photos are processed on your device. Nothing is uploaded to any server.";
+"prePermission.continue" = "Continue";
+"prePermission.changeInSettings" = "You can change this later in Settings";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "Loading...";
+"photoEdit.saving" = "Saving...";
+"photoEdit.saved.title" = "Saved!";
+"photoEdit.saved.message" = "Photo saved successfully";
+"photoEdit.error.title" = "Error";
+"photoEdit.saveDialog.title" = "Save Photo";
+"photoEdit.saveToPhotos" = "Save Copy to Photos";
+"photoEdit.saveToFiles" = "Save to Files";
+"photoEdit.tooltip.blur" = "Tap a face to select it, then press Blur";
+"photoEdit.tooltip.cover" = "Tap a face to select it, then press Cover";
+"photoEdit.regions" = "%d regions";
+"photoEdit.selected" = "%d selected";
+"photoEdit.blurred" = "%d blurred";
+"photoEdit.intensity" = "Intensity:";
+"photoEdit.undo" = "Undo";
+"photoEdit.selectAll" = "All";
+"photoEdit.clearSelection" = "Clear";
+"photoEdit.resetZoom" = "Reset";
+"photoEdit.addRegion" = "Add";
+"photoEdit.blur" = "Blur";
+"photoEdit.cover" = "Cover";
+"photoEdit.delete" = "Delete";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "Settings";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "Privacy Mode";
+"settings.privacyMode.footer" = "Choose how faces are hidden. Blur modes destroy facial features irreversibly. Box modes cover faces with a solid color.";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "Full Blur";
+"privacyMode.fullBlur.description" = "Pixelate → Blur → Pixelate (maximum privacy)";
+"privacyMode.blurNoFinalPixelate" = "Blur (No Final Pixelate)";
+"privacyMode.blurNoFinalPixelate.description" = "Pixelate → Blur (smoother look)";
+"privacyMode.pixelateOnly" = "Pixelate Only";
+"privacyMode.pixelateOnly.description" = "Pixelate only (classic mosaic)";
+"privacyMode.blackBox" = "Black Box";
+"privacyMode.blackBox.description" = "Solid black rectangle";
+"privacyMode.whiteBox" = "White Box";
+"privacyMode.whiteBox.description" = "Solid white rectangle";
+"privacyMode.customBox" = "Custom Color Box";
+"privacyMode.customBox.description" = "Solid color of your choice";
+
+// Custom Color Section
+"settings.customColor.header" = "Custom Color";
+"settings.customColor.footer" = "Select a custom color for the face cover box.";
+"settings.customColor.picker" = "Box Color";
+
+// Statistics Section
+"settings.statistics.header" = "Statistics";
+"settings.statistics.blurredCount" = "Blurred Photos Count";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "Manage Blurred Photos";
+"settings.managePhotos.footer" = "'Delete All Blurred Photos' will permanently delete the blurred copies you created from your Photos library. 'Clear Tracking History' only removes the tracking data without deleting any photos.";
+"settings.managePhotos.deleteAll" = "Delete All Blurred Photos from Photos";
+"settings.managePhotos.clearHistory" = "Clear Tracking History";
+
+// History Section
+"settings.history.header" = "History";
+"settings.history.viewPhotos" = "View Blurred Photos";
+
+// Tips Section
+"settings.tips.header" = "Tips";
+"settings.tips.resetTooltips" = "Reset Tooltip Hints";
+"settings.tips.footer" = "Show the helpful tip banners again throughout the app.";
+
+// About Section
+"settings.about.header" = "About";
+"settings.about.privacyTitle" = "Privacy Protection";
+"settings.about.privacyDescription" = "Faces are hidden using the selected privacy mode. Blur modes use pixelation that cannot be reversed or reconstructed.";
+
+// Alerts
+"alert.deleteAll.title" = "Delete All Blurred Photos?";
+"alert.deleteAll.message" = "This will permanently delete %d blurred photo(s) from your Photos library. This action cannot be undone.";
+"alert.deleteAll.confirm" = "Delete All";
+"alert.clearHistory.title" = "Clear Tracking History?";
+"alert.clearHistory.message" = "This will only clear the tracking history. The blurred photos will remain in your Photos library.";
+"alert.clearHistory.confirm" = "Clear";
+"alert.deletionComplete.title" = "Deletion Complete";
+"alert.deletionComplete.message" = "Successfully deleted %d photo(s). %d failed.";
+"alert.ok" = "OK";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "Blurred Photos";
+"blurredPhotosList.itemTitle" = "Blurred Photo";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "Light";
+"blurIntensity.medium" = "Medium";
+"blurIntensity.strong" = "Strong";
+"blurIntensity.maximum" = "Maximum";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "Settings";
+"accessibility.saveButton" = "Save photo";
+"accessibility.undoButton" = "Undo last action";
+"accessibility.selectAllButton" = "Select all regions";
+"accessibility.clearSelectionButton" = "Clear selection";
+"accessibility.resetZoomButton" = "Reset zoom and position";
+"accessibility.addRegionButton" = "Add custom region";
+"accessibility.blurButton" = "Blur selected regions";
+"accessibility.coverButton" = "Cover selected regions";
+"accessibility.deleteRegionButton" = "Delete region";
+"accessibility.dismissTooltip" = "Dismiss tip";
+"accessibility.photoThumbnail" = "Photo thumbnail";
+"accessibility.blurredPhotoThumbnail" = "Blurred photo thumbnail";
+"accessibility.faceRegion" = "Face region";
+"accessibility.selectedFaceRegion" = "Selected face region";
+"accessibility.blurredFaceRegion" = "Blurred face region";
+"accessibility.resizeHandle" = "Resize handle";
+"accessibility.intensitySlider" = "Blur intensity slider";
+"accessibility.colorPicker" = "Box color picker";
+"accessibility.privacyModeOption" = "%@ privacy mode";
+"accessibility.selectedPrivacyMode" = "%@ privacy mode, selected";
+"accessibility.zoomLevel" = "Zoom level %d percent";
+"accessibility.continueButton" = "Continue to request photo access";
+"accessibility.openSettingsButton" = "Open device settings";

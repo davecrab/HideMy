@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Hindi)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "फ़ोटो";
+"navigation.settings" = "सेटिंग्स";
+"navigation.save" = "सहेजें";
+"navigation.cancel" = "रद्द करें";
+"navigation.done" = "पूर्ण";
+"navigation.back" = "वापस";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "फ़ोटो";
+"photoGrid.noPhotos.title" = "कोई फ़ोटो नहीं";
+"photoGrid.noPhotos.description" = "आपकी फ़ोटो लाइब्रेरी खाली है";
+"photoGrid.accessRequired.title" = "फ़ोटो एक्सेस आवश्यक";
+"photoGrid.accessRequired.description" = "इस ऐप का उपयोग करने के लिए कृपया सेटिंग्स में अपनी फ़ोटो तक पहुंच की अनुमति दें";
+"photoGrid.openSettings" = "सेटिंग्स खोलें";
+"photoGrid.loading" = "फ़ोटो लोड हो रहे हैं...";
+"photoGrid.tooltip" = "संपादित करने के लिए फ़ोटो पर टैप करें";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "फ़ोटो लाइब्रेरी एक्सेस";
+"prePermission.browse.title" = "अपनी फ़ोटो ब्राउज़ करें";
+"prePermission.browse.description" = "चेहरों और पहचान की सुरक्षा के लिए अपनी लाइब्रेरी से फ़ोटो चुनें।";
+"prePermission.save.title" = "सुरक्षित फ़ोटो सहेजें";
+"prePermission.save.description" = "धुंधली फ़ोटो को नई प्रतियों के रूप में अपनी लाइब्रेरी में सहेजें।";
+"prePermission.privacy.title" = "आपकी गोपनीयता मायने रखती है";
+"prePermission.privacy.description" = "फ़ोटो आपके डिवाइस पर प्रोसेस होती हैं। कुछ भी किसी सर्वर पर अपलोड नहीं किया जाता।";
+"prePermission.continue" = "जारी रखें";
+"prePermission.changeInSettings" = "आप इसे बाद में सेटिंग्स में बदल सकते हैं";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "लोड हो रहा है...";
+"photoEdit.saving" = "सहेजा जा रहा है...";
+"photoEdit.saved.title" = "सहेजा गया!";
+"photoEdit.saved.message" = "फ़ोटो सफलतापूर्वक सहेजी गई";
+"photoEdit.error.title" = "त्रुटि";
+"photoEdit.saveDialog.title" = "फ़ोटो सहेजें";
+"photoEdit.saveToPhotos" = "फ़ोटो में कॉपी सहेजें";
+"photoEdit.saveToFiles" = "फ़ाइल्स में सहेजें";
+"photoEdit.tooltip.blur" = "चयन करने के लिए चेहरे पर टैप करें, फिर ब्लर दबाएं";
+"photoEdit.tooltip.cover" = "चयन करने के लिए चेहरे पर टैप करें, फिर कवर दबाएं";
+"photoEdit.regions" = "%d क्षेत्र";
+"photoEdit.selected" = "%d चयनित";
+"photoEdit.blurred" = "%d धुंधले";
+"photoEdit.intensity" = "तीव्रता:";
+"photoEdit.undo" = "पूर्ववत करें";
+"photoEdit.selectAll" = "सभी";
+"photoEdit.clearSelection" = "साफ़ करें";
+"photoEdit.resetZoom" = "रीसेट";
+"photoEdit.addRegion" = "जोड़ें";
+"photoEdit.blur" = "ब्लर";
+"photoEdit.cover" = "कवर";
+"photoEdit.delete" = "हटाएं";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "सेटिंग्स";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "गोपनीयता मोड";
+"settings.privacyMode.footer" = "चुनें कि चेहरे कैसे छुपाए जाएं। ब्लर मोड चेहरे की विशेषताओं को अपरिवर्तनीय रूप से नष्ट करते हैं। बॉक्स मोड चेहरों को ठोस रंग से ढकते हैं।";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "पूर्ण ब्लर";
+"privacyMode.fullBlur.description" = "पिक्सेलेट → ब्लर → पिक्सेलेट (अधिकतम गोपनीयता)";
+"privacyMode.blurNoFinalPixelate" = "ब्लर (बिना अंतिम पिक्सेलेशन)";
+"privacyMode.blurNoFinalPixelate.description" = "पिक्सेलेट → ब्लर (चिकना दिखावट)";
+"privacyMode.pixelateOnly" = "केवल पिक्सेलेट";
+"privacyMode.pixelateOnly.description" = "केवल पिक्सेलेशन (क्लासिक मोज़ेक)";
+"privacyMode.blackBox" = "काला बॉक्स";
+"privacyMode.blackBox.description" = "ठोस काला आयत";
+"privacyMode.whiteBox" = "सफेद बॉक्स";
+"privacyMode.whiteBox.description" = "ठोस सफेद आयत";
+"privacyMode.customBox" = "कस्टम रंग बॉक्स";
+"privacyMode.customBox.description" = "आपकी पसंद का ठोस रंग";
+
+// Custom Color Section
+"settings.customColor.header" = "कस्टम रंग";
+"settings.customColor.footer" = "चेहरा कवर बॉक्स के लिए कस्टम रंग चुनें।";
+"settings.customColor.picker" = "बॉक्स का रंग";
+
+// Statistics Section
+"settings.statistics.header" = "आंकड़े";
+"settings.statistics.blurredCount" = "धुंधली फ़ोटो की संख्या";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "धुंधली फ़ोटो प्रबंधित करें";
+"settings.managePhotos.footer" = "'सभी धुंधली फ़ोटो हटाएं' आपकी फ़ोटो लाइब्रेरी से आपके द्वारा बनाई गई धुंधली प्रतियों को स्थायी रूप से हटा देगा। 'ट्रैकिंग इतिहास साफ़ करें' केवल ट्रैकिंग डेटा हटाता है, कोई फ़ोटो नहीं।";
+"settings.managePhotos.deleteAll" = "फ़ोटो से सभी धुंधली फ़ोटो हटाएं";
+"settings.managePhotos.clearHistory" = "ट्रैकिंग इतिहास साफ़ करें";
+
+// History Section
+"settings.history.header" = "इतिहास";
+"settings.history.viewPhotos" = "धुंधली फ़ोटो देखें";
+
+// Tips Section
+"settings.tips.header" = "टिप्स";
+"settings.tips.resetTooltips" = "टूलटिप संकेत रीसेट करें";
+"settings.tips.footer" = "पूरे ऐप में उपयोगी टिप बैनर फिर से दिखाएं।";
+
+// About Section
+"settings.about.header" = "के बारे में";
+"settings.about.privacyTitle" = "गोपनीयता सुरक्षा";
+"settings.about.privacyDescription" = "चेहरे चयनित गोपनीयता मोड का उपयोग करके छुपाए जाते हैं। ब्लर मोड पिक्सेलेशन का उपयोग करते हैं जिसे उलटा या पुनर्निर्मित नहीं किया जा सकता।";
+
+// Alerts
+"alert.deleteAll.title" = "सभी धुंधली फ़ोटो हटाएं?";
+"alert.deleteAll.message" = "यह आपकी फ़ोटो लाइब्रेरी से %d धुंधली फ़ोटो को स्थायी रूप से हटा देगा। यह क्रिया पूर्ववत नहीं की जा सकती।";
+"alert.deleteAll.confirm" = "सभी हटाएं";
+"alert.clearHistory.title" = "ट्रैकिंग इतिहास साफ़ करें?";
+"alert.clearHistory.message" = "यह केवल ट्रैकिंग इतिहास साफ़ करेगा। धुंधली फ़ोटो आपकी फ़ोटो लाइब्रेरी में रहेंगी।";
+"alert.clearHistory.confirm" = "साफ़ करें";
+"alert.deletionComplete.title" = "हटाना पूर्ण";
+"alert.deletionComplete.message" = "%d फ़ोटो सफलतापूर्वक हटाई गईं। %d विफल।";
+"alert.ok" = "ठीक है";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "धुंधली फ़ोटो";
+"blurredPhotosList.itemTitle" = "धुंधली फ़ोटो";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "हल्का";
+"blurIntensity.medium" = "मध्यम";
+"blurIntensity.strong" = "मजबूत";
+"blurIntensity.maximum" = "अधिकतम";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "सेटिंग्स";
+"accessibility.saveButton" = "फ़ोटो सहेजें";
+"accessibility.undoButton" = "अंतिम क्रिया पूर्ववत करें";
+"accessibility.selectAllButton" = "सभी क्षेत्र चुनें";
+"accessibility.clearSelectionButton" = "चयन साफ़ करें";
+"accessibility.resetZoomButton" = "ज़ूम और स्थिति रीसेट करें";
+"accessibility.addRegionButton" = "कस्टम क्षेत्र जोड़ें";
+"accessibility.blurButton" = "चयनित क्षेत्रों को धुंधला करें";
+"accessibility.coverButton" = "चयनित क्षेत्रों को कवर करें";
+"accessibility.deleteRegionButton" = "क्षेत्र हटाएं";
+"accessibility.dismissTooltip" = "टिप बंद करें";
+"accessibility.photoThumbnail" = "फ़ोटो थंबनेल";
+"accessibility.blurredPhotoThumbnail" = "धुंधली फ़ोटो थंबनेल";
+"accessibility.faceRegion" = "चेहरे का क्षेत्र";
+"accessibility.selectedFaceRegion" = "चयनित चेहरे का क्षेत्र";
+"accessibility.blurredFaceRegion" = "धुंधला चेहरे का क्षेत्र";
+"accessibility.resizeHandle" = "आकार बदलने का हैंडल";
+"accessibility.intensitySlider" = "ब्लर तीव्रता स्लाइडर";
+"accessibility.colorPicker" = "बॉक्स रंग चुनने वाला";
+"accessibility.privacyModeOption" = "%@ गोपनीयता मोड";
+"accessibility.selectedPrivacyMode" = "%@ गोपनीयता मोड, चयनित";
+"accessibility.zoomLevel" = "ज़ूम स्तर %d प्रतिशत";
+"accessibility.continueButton" = "फ़ोटो एक्सेस का अनुरोध करने के लिए जारी रखें";
+"accessibility.openSettingsButton" = "डिवाइस सेटिंग्स खोलें";

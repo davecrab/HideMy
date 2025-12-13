@@ -40,12 +40,22 @@ class ImageBlurrer {
     ///   - image: The original image
     ///   - regions: Array of blur regions with normalized coordinates and rotation
     ///   - intensity: The blur intensity level (affects pixel size)
+    ///   - mode: The privacy mode to use (defaults to current setting)
     /// - Returns: The blurred image, or nil if blurring failed
     static func applySecureBlur(
         to image: UIImage,
         regions: [BlurRegionData],
-        intensity: CGFloat = 0.75
+        intensity: CGFloat = 0.75,
+        mode: PrivacyMode? = nil
     ) -> UIImage? {
+        let privacyMode = mode ?? PrivacySettings.shared.privacyMode
+
+        // Handle box modes separately
+        if privacyMode.isBoxMode {
+            let color = PrivacySettings.shared.getBoxColor()
+            return applySolidBlock(to: image, regions: regions, color: color)
+        }
+
         guard let cgImage = image.cgImage else { return nil }
 
         let ciImage = CIImage(cgImage: cgImage)
@@ -74,7 +84,8 @@ class ImageBlurrer {
                 resultImage,
                 region: expandedRect,
                 rotation: region.rotation,
-                intensity: intensity
+                intensity: intensity,
+                mode: privacyMode
             ) {
                 resultImage = blurredRegion
             }
@@ -106,7 +117,8 @@ class ImageBlurrer {
         _ image: CIImage,
         region: CGRect,
         rotation: CGFloat,
-        intensity: CGFloat
+        intensity: CGFloat,
+        mode: PrivacyMode = .fullBlur
     ) -> CIImage? {
         // First, crop the region we want to blur
         let clampedRegion = region.intersection(image.extent)
@@ -128,30 +140,84 @@ class ImageBlurrer {
                     region: clampedRegion,
                     rotation: rotation,
                     pixelSize: pixelSize,
-                    intensity: intensity
+                    intensity: intensity,
+                    mode: mode
                 ) ?? blurredRegion
         } else {
-            // Step 1: Heavy pixelation - this destroys fine detail irreversibly
-            if let pixellated = applyPixelation(to: blurredRegion, scale: pixelSize) {
-                blurredRegion = pixellated
-            }
-
-            // Step 2: Apply Gaussian blur on top of pixelation for additional security
-            let blurRadius = pixelSize * 0.5 * intensity
-            if let blurred = applyGaussianBlur(to: blurredRegion, radius: blurRadius) {
-                blurredRegion = blurred
-            }
-
-            // Step 3: Re-pixelate to ensure uniform blocks (prevents gradient analysis)
-            if let pixellated = applyPixelation(to: blurredRegion, scale: pixelSize * 1.2) {
-                blurredRegion = pixellated
-            }
+            blurredRegion = applyBlurPipeline(
+                to: blurredRegion,
+                pixelSize: pixelSize,
+                intensity: intensity,
+                mode: mode
+            )
         }
 
         // Composite the blurred region back onto the original image
         let composited = blurredRegion.composited(over: image)
 
         return composited
+    }
+
+    /// Applies the blur pipeline based on the privacy mode
+    private static func applyBlurPipeline(
+        to image: CIImage,
+        pixelSize: CGFloat,
+        intensity: CGFloat,
+        mode: PrivacyMode
+    ) -> CIImage {
+        var result = image
+
+        switch mode {
+        case .fullBlur:
+            // Step 1: Heavy pixelation - this destroys fine detail irreversibly
+            if let pixellated = applyPixelation(to: result, scale: pixelSize) {
+                result = pixellated
+            }
+
+            // Step 2: Apply Gaussian blur on top of pixelation for additional security
+            let blurRadius = pixelSize * 0.5 * intensity
+            if let blurred = applyGaussianBlur(to: result, radius: blurRadius) {
+                result = blurred
+            }
+
+            // Step 3: Re-pixelate to ensure uniform blocks (prevents gradient analysis)
+            if let pixellated = applyPixelation(to: result, scale: pixelSize * 1.2) {
+                result = pixellated
+            }
+
+        case .blurNoFinalPixelate:
+            // Step 1: Heavy pixelation
+            if let pixellated = applyPixelation(to: result, scale: pixelSize) {
+                result = pixellated
+            }
+
+            // Step 2: Apply Gaussian blur (no final pixelation for smoother look)
+            let blurRadius = pixelSize * 0.5 * intensity
+            if let blurred = applyGaussianBlur(to: result, radius: blurRadius) {
+                result = blurred
+            }
+
+        case .pixelateOnly:
+            // Only pixelation, no blur
+            if let pixellated = applyPixelation(to: result, scale: pixelSize) {
+                result = pixellated
+            }
+
+        default:
+            // Box modes are handled separately, but fallback to full blur
+            if let pixellated = applyPixelation(to: result, scale: pixelSize) {
+                result = pixellated
+            }
+            let blurRadius = pixelSize * 0.5 * intensity
+            if let blurred = applyGaussianBlur(to: result, radius: blurRadius) {
+                result = blurred
+            }
+            if let pixellated = applyPixelation(to: result, scale: pixelSize * 1.2) {
+                result = pixellated
+            }
+        }
+
+        return result
     }
 
     /// Applies blur to a rotated rectangular region
@@ -161,7 +227,8 @@ class ImageBlurrer {
         region rect: CGRect,
         rotation: CGFloat,
         pixelSize: CGFloat,
-        intensity: CGFloat
+        intensity: CGFloat,
+        mode: PrivacyMode = .fullBlur
     ) -> CIImage? {
         let center = CGPoint(x: rect.midX, y: rect.midY)
 
@@ -183,19 +250,13 @@ class ImageBlurrer {
 
         workImage = workImage.transformed(by: rotateTransform)
 
-        // Apply blur
-        if let pixellated = applyPixelation(to: workImage, scale: pixelSize) {
-            workImage = pixellated
-        }
-
-        let blurRadius = pixelSize * 0.5 * intensity
-        if let blurred = applyGaussianBlur(to: workImage, radius: blurRadius) {
-            workImage = blurred
-        }
-
-        if let pixellated = applyPixelation(to: workImage, scale: pixelSize * 1.2) {
-            workImage = pixellated
-        }
+        // Apply blur pipeline based on mode
+        workImage = applyBlurPipeline(
+            to: workImage,
+            pixelSize: pixelSize,
+            intensity: intensity,
+            mode: mode
+        )
 
         // Rotate back
         let inverseTransform = CGAffineTransform(translationX: center.x, y: center.y)
@@ -230,7 +291,7 @@ class ImageBlurrer {
         return blurFilter.outputImage?.cropped(to: image.extent)
     }
 
-    /// Alternative: Creates a solid color block over regions (maximum privacy)
+    /// Creates a solid color block over regions (maximum privacy)
     static func applySolidBlock(
         to image: UIImage,
         regions: [BlurRegionData],

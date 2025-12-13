@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Polish)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "Zdjęcia";
+"navigation.settings" = "Ustawienia";
+"navigation.save" = "Zapisz";
+"navigation.cancel" = "Anuluj";
+"navigation.done" = "Gotowe";
+"navigation.back" = "Wstecz";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "Zdjęcia";
+"photoGrid.noPhotos.title" = "Brak Zdjęć";
+"photoGrid.noPhotos.description" = "Twoja biblioteka zdjęć jest pusta";
+"photoGrid.accessRequired.title" = "Wymagany Dostęp do Zdjęć";
+"photoGrid.accessRequired.description" = "Proszę zezwolić na dostęp do zdjęć w Ustawieniach, aby korzystać z tej aplikacji";
+"photoGrid.openSettings" = "Otwórz Ustawienia";
+"photoGrid.loading" = "Ładowanie Zdjęć...";
+"photoGrid.tooltip" = "Stuknij zdjęcie, aby je wybrać do edycji";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "Dostęp do Biblioteki Zdjęć";
+"prePermission.browse.title" = "Przeglądaj Swoje Zdjęcia";
+"prePermission.browse.description" = "Wybierz zdjęcia z biblioteki, aby chronić twarze i tożsamości.";
+"prePermission.save.title" = "Zapisuj Chronione Zdjęcia";
+"prePermission.save.description" = "Zapisuj zamazane zdjęcia jako nowe kopie w swojej bibliotece.";
+"prePermission.privacy.title" = "Twoja Prywatność Jest Ważna";
+"prePermission.privacy.description" = "Zdjęcia są przetwarzane na Twoim urządzeniu. Nic nie jest przesyłane na żaden serwer.";
+"prePermission.continue" = "Kontynuuj";
+"prePermission.changeInSettings" = "Możesz to zmienić później w Ustawieniach";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "Ładowanie...";
+"photoEdit.saving" = "Zapisywanie...";
+"photoEdit.saved.title" = "Zapisano!";
+"photoEdit.saved.message" = "Zdjęcie zostało pomyślnie zapisane";
+"photoEdit.error.title" = "Błąd";
+"photoEdit.saveDialog.title" = "Zapisz Zdjęcie";
+"photoEdit.saveToPhotos" = "Zapisz Kopię w Zdjęciach";
+"photoEdit.saveToFiles" = "Zapisz w Plikach";
+"photoEdit.tooltip.blur" = "Stuknij twarz, aby ją wybrać, następnie naciśnij Rozmyj";
+"photoEdit.tooltip.cover" = "Stuknij twarz, aby ją wybrać, następnie naciśnij Zakryj";
+"photoEdit.regions" = "%d obszarów";
+"photoEdit.selected" = "%d wybranych";
+"photoEdit.blurred" = "%d rozmytych";
+"photoEdit.intensity" = "Intensywność:";
+"photoEdit.undo" = "Cofnij";
+"photoEdit.selectAll" = "Wszystko";
+"photoEdit.clearSelection" = "Wyczyść";
+"photoEdit.resetZoom" = "Resetuj";
+"photoEdit.addRegion" = "Dodaj";
+"photoEdit.blur" = "Rozmyj";
+"photoEdit.cover" = "Zakryj";
+"photoEdit.delete" = "Usuń";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "Ustawienia";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "Tryb Prywatności";
+"settings.privacyMode.footer" = "Wybierz sposób ukrywania twarzy. Tryby rozmycia nieodwracalnie niszczą rysy twarzy. Tryby ramki zakrywają twarze jednolitym kolorem.";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "Pełne Rozmycie";
+"privacyMode.fullBlur.description" = "Pikselizacja → Rozmycie → Pikselizacja (maksymalna prywatność)";
+"privacyMode.blurNoFinalPixelate" = "Rozmycie (Bez Końcowej Pikselizacji)";
+"privacyMode.blurNoFinalPixelate.description" = "Pikselizacja → Rozmycie (gładszy wygląd)";
+"privacyMode.pixelateOnly" = "Tylko Pikselizacja";
+"privacyMode.pixelateOnly.description" = "Tylko pikselizacja (klasyczna mozaika)";
+"privacyMode.blackBox" = "Czarna Ramka";
+"privacyMode.blackBox.description" = "Jednolity czarny prostokąt";
+"privacyMode.whiteBox" = "Biała Ramka";
+"privacyMode.whiteBox.description" = "Jednolity biały prostokąt";
+"privacyMode.customBox" = "Ramka w Wybranym Kolorze";
+"privacyMode.customBox.description" = "Jednolity kolor według wyboru";
+
+// Custom Color Section
+"settings.customColor.header" = "Własny Kolor";
+"settings.customColor.footer" = "Wybierz własny kolor dla ramki zakrywającej twarz.";
+"settings.customColor.picker" = "Kolor Ramki";
+
+// Statistics Section
+"settings.statistics.header" = "Statystyki";
+"settings.statistics.blurredCount" = "Liczba Rozmytych Zdjęć";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "Zarządzaj Rozmytymi Zdjęciami";
+"settings.managePhotos.footer" = "'Usuń Wszystkie Rozmyte Zdjęcia' trwale usunie rozmyte kopie utworzone w Bibliotece Zdjęć. 'Wyczyść Historię Śledzenia' usuwa tylko dane śledzenia bez usuwania zdjęć.";
+"settings.managePhotos.deleteAll" = "Usuń Wszystkie Rozmyte Zdjęcia ze Zdjęć";
+"settings.managePhotos.clearHistory" = "Wyczyść Historię Śledzenia";
+
+// History Section
+"settings.history.header" = "Historia";
+"settings.history.viewPhotos" = "Zobacz Rozmyte Zdjęcia";
+
+// Tips Section
+"settings.tips.header" = "Wskazówki";
+"settings.tips.resetTooltips" = "Resetuj Podpowiedzi";
+"settings.tips.footer" = "Pokaż ponownie pomocne banery z podpowiedziami w całej aplikacji.";
+
+// About Section
+"settings.about.header" = "O Aplikacji";
+"settings.about.privacyTitle" = "Ochrona Prywatności";
+"settings.about.privacyDescription" = "Twarze są ukrywane przy użyciu wybranego trybu prywatności. Tryby rozmycia używają pikselizacji, której nie można cofnąć ani zrekonstruować.";
+
+// Alerts
+"alert.deleteAll.title" = "Usunąć Wszystkie Rozmyte Zdjęcia?";
+"alert.deleteAll.message" = "To trwale usunie %d rozmytych zdjęć z Twojej Biblioteki Zdjęć. Tej czynności nie można cofnąć.";
+"alert.deleteAll.confirm" = "Usuń Wszystko";
+"alert.clearHistory.title" = "Wyczyścić Historię Śledzenia?";
+"alert.clearHistory.message" = "To wyczyści tylko historię śledzenia. Rozmyte zdjęcia pozostaną w Twojej Bibliotece Zdjęć.";
+"alert.clearHistory.confirm" = "Wyczyść";
+"alert.deletionComplete.title" = "Usuwanie Zakończone";
+"alert.deletionComplete.message" = "Pomyślnie usunięto %d zdjęć. %d nie powiodło się.";
+"alert.ok" = "OK";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "Rozmyte Zdjęcia";
+"blurredPhotosList.itemTitle" = "Rozmyte Zdjęcie";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "Lekka";
+"blurIntensity.medium" = "Średnia";
+"blurIntensity.strong" = "Mocna";
+"blurIntensity.maximum" = "Maksymalna";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "Ustawienia";
+"accessibility.saveButton" = "Zapisz zdjęcie";
+"accessibility.undoButton" = "Cofnij ostatnią czynność";
+"accessibility.selectAllButton" = "Wybierz wszystkie obszary";
+"accessibility.clearSelectionButton" = "Wyczyść zaznaczenie";
+"accessibility.resetZoomButton" = "Resetuj powiększenie i pozycję";
+"accessibility.addRegionButton" = "Dodaj własny obszar";
+"accessibility.blurButton" = "Rozmyj wybrane obszary";
+"accessibility.coverButton" = "Zakryj wybrane obszary";
+"accessibility.deleteRegionButton" = "Usuń obszar";
+"accessibility.dismissTooltip" = "Zamknij podpowiedź";
+"accessibility.photoThumbnail" = "Miniatura zdjęcia";
+"accessibility.blurredPhotoThumbnail" = "Miniatura rozmytego zdjęcia";
+"accessibility.faceRegion" = "Obszar twarzy";
+"accessibility.selectedFaceRegion" = "Wybrany obszar twarzy";
+"accessibility.blurredFaceRegion" = "Rozmyty obszar twarzy";
+"accessibility.resizeHandle" = "Uchwyt zmiany rozmiaru";
+"accessibility.intensitySlider" = "Suwak intensywności rozmycia";
+"accessibility.colorPicker" = "Wybór koloru ramki";
+"accessibility.privacyModeOption" = "Tryb prywatności %@";
+"accessibility.selectedPrivacyMode" = "Tryb prywatności %@, wybrany";
+"accessibility.zoomLevel" = "Poziom powiększenia %d procent";
+"accessibility.continueButton" = "Kontynuuj, aby poprosić o dostęp do zdjęć";
+"accessibility.openSettingsButton" = "Otwórz ustawienia urządzenia";

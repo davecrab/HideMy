@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (French)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "Photos";
+"navigation.settings" = "Réglages";
+"navigation.save" = "Enregistrer";
+"navigation.cancel" = "Annuler";
+"navigation.done" = "Terminé";
+"navigation.back" = "Retour";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "Photos";
+"photoGrid.noPhotos.title" = "Aucune Photo";
+"photoGrid.noPhotos.description" = "Votre photothèque est vide";
+"photoGrid.accessRequired.title" = "Accès aux Photos Requis";
+"photoGrid.accessRequired.description" = "Veuillez autoriser l'accès à vos photos dans les Réglages pour utiliser cette app";
+"photoGrid.openSettings" = "Ouvrir les Réglages";
+"photoGrid.loading" = "Chargement des Photos...";
+"photoGrid.tooltip" = "Touchez une photo pour la sélectionner et la modifier";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "Accès à la Photothèque";
+"prePermission.browse.title" = "Parcourir Vos Photos";
+"prePermission.browse.description" = "Sélectionnez des photos de votre bibliothèque pour protéger les visages et les identités.";
+"prePermission.save.title" = "Enregistrer les Photos Protégées";
+"prePermission.save.description" = "Enregistrez les photos floutées dans votre bibliothèque en tant que nouvelles copies.";
+"prePermission.privacy.title" = "Votre Vie Privée Compte";
+"prePermission.privacy.description" = "Les photos sont traitées sur votre appareil. Rien n'est téléchargé vers un serveur.";
+"prePermission.continue" = "Continuer";
+"prePermission.changeInSettings" = "Vous pouvez modifier cela plus tard dans les Réglages";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "Chargement...";
+"photoEdit.saving" = "Enregistrement...";
+"photoEdit.saved.title" = "Enregistré !";
+"photoEdit.saved.message" = "Photo enregistrée avec succès";
+"photoEdit.error.title" = "Erreur";
+"photoEdit.saveDialog.title" = "Enregistrer la Photo";
+"photoEdit.saveToPhotos" = "Enregistrer une Copie dans Photos";
+"photoEdit.saveToFiles" = "Enregistrer dans Fichiers";
+"photoEdit.tooltip.blur" = "Touchez un visage pour le sélectionner, puis appuyez sur Flouter";
+"photoEdit.tooltip.cover" = "Touchez un visage pour le sélectionner, puis appuyez sur Couvrir";
+"photoEdit.regions" = "%d régions";
+"photoEdit.selected" = "%d sélectionnées";
+"photoEdit.blurred" = "%d floutées";
+"photoEdit.intensity" = "Intensité :";
+"photoEdit.undo" = "Annuler";
+"photoEdit.selectAll" = "Tout";
+"photoEdit.clearSelection" = "Effacer";
+"photoEdit.resetZoom" = "Réinit.";
+"photoEdit.addRegion" = "Ajouter";
+"photoEdit.blur" = "Flouter";
+"photoEdit.cover" = "Couvrir";
+"photoEdit.delete" = "Supprimer";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "Réglages";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "Mode de Confidentialité";
+"settings.privacyMode.footer" = "Choisissez comment masquer les visages. Les modes de floutage détruisent les traits du visage de manière irréversible. Les modes boîte couvrent les visages avec une couleur unie.";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "Flou Complet";
+"privacyMode.fullBlur.description" = "Pixeliser → Flouter → Pixeliser (confidentialité maximale)";
+"privacyMode.blurNoFinalPixelate" = "Flou (Sans Pixelisation Finale)";
+"privacyMode.blurNoFinalPixelate.description" = "Pixeliser → Flouter (aspect plus lisse)";
+"privacyMode.pixelateOnly" = "Pixelisation Seule";
+"privacyMode.pixelateOnly.description" = "Pixelisation uniquement (mosaïque classique)";
+"privacyMode.blackBox" = "Boîte Noire";
+"privacyMode.blackBox.description" = "Rectangle noir uni";
+"privacyMode.whiteBox" = "Boîte Blanche";
+"privacyMode.whiteBox.description" = "Rectangle blanc uni";
+"privacyMode.customBox" = "Boîte Couleur Personnalisée";
+"privacyMode.customBox.description" = "Couleur unie de votre choix";
+
+// Custom Color Section
+"settings.customColor.header" = "Couleur Personnalisée";
+"settings.customColor.footer" = "Sélectionnez une couleur personnalisée pour la boîte de couverture du visage.";
+"settings.customColor.picker" = "Couleur de la Boîte";
+
+// Statistics Section
+"settings.statistics.header" = "Statistiques";
+"settings.statistics.blurredCount" = "Nombre de Photos Floutées";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "Gérer les Photos Floutées";
+"settings.managePhotos.footer" = "'Supprimer Toutes les Photos Floutées' supprimera définitivement les copies floutées que vous avez créées de votre Photothèque. 'Effacer l'Historique' supprime uniquement les données de suivi sans supprimer aucune photo.";
+"settings.managePhotos.deleteAll" = "Supprimer Toutes les Photos Floutées";
+"settings.managePhotos.clearHistory" = "Effacer l'Historique de Suivi";
+
+// History Section
+"settings.history.header" = "Historique";
+"settings.history.viewPhotos" = "Voir les Photos Floutées";
+
+// Tips Section
+"settings.tips.header" = "Conseils";
+"settings.tips.resetTooltips" = "Réinitialiser les Conseils";
+"settings.tips.footer" = "Afficher à nouveau les bannières de conseils utiles dans toute l'app.";
+
+// About Section
+"settings.about.header" = "À Propos";
+"settings.about.privacyTitle" = "Protection de la Vie Privée";
+"settings.about.privacyDescription" = "Les visages sont masqués en utilisant le mode de confidentialité sélectionné. Les modes de floutage utilisent une pixelisation qui ne peut pas être inversée ou reconstruite.";
+
+// Alerts
+"alert.deleteAll.title" = "Supprimer Toutes les Photos Floutées ?";
+"alert.deleteAll.message" = "Cela supprimera définitivement %d photo(s) floutée(s) de votre Photothèque. Cette action est irréversible.";
+"alert.deleteAll.confirm" = "Tout Supprimer";
+"alert.clearHistory.title" = "Effacer l'Historique de Suivi ?";
+"alert.clearHistory.message" = "Cela n'effacera que l'historique de suivi. Les photos floutées resteront dans votre Photothèque.";
+"alert.clearHistory.confirm" = "Effacer";
+"alert.deletionComplete.title" = "Suppression Terminée";
+"alert.deletionComplete.message" = "%d photo(s) supprimée(s) avec succès. %d échec(s).";
+"alert.ok" = "OK";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "Photos Floutées";
+"blurredPhotosList.itemTitle" = "Photo Floutée";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "Léger";
+"blurIntensity.medium" = "Moyen";
+"blurIntensity.strong" = "Fort";
+"blurIntensity.maximum" = "Maximum";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "Réglages";
+"accessibility.saveButton" = "Enregistrer la photo";
+"accessibility.undoButton" = "Annuler la dernière action";
+"accessibility.selectAllButton" = "Sélectionner toutes les régions";
+"accessibility.clearSelectionButton" = "Effacer la sélection";
+"accessibility.resetZoomButton" = "Réinitialiser le zoom et la position";
+"accessibility.addRegionButton" = "Ajouter une région personnalisée";
+"accessibility.blurButton" = "Flouter les régions sélectionnées";
+"accessibility.coverButton" = "Couvrir les régions sélectionnées";
+"accessibility.deleteRegionButton" = "Supprimer la région";
+"accessibility.dismissTooltip" = "Fermer le conseil";
+"accessibility.photoThumbnail" = "Miniature de photo";
+"accessibility.blurredPhotoThumbnail" = "Miniature de photo floutée";
+"accessibility.faceRegion" = "Région du visage";
+"accessibility.selectedFaceRegion" = "Région du visage sélectionnée";
+"accessibility.blurredFaceRegion" = "Région du visage floutée";
+"accessibility.resizeHandle" = "Poignée de redimensionnement";
+"accessibility.intensitySlider" = "Curseur d'intensité du flou";
+"accessibility.colorPicker" = "Sélecteur de couleur de boîte";
+"accessibility.privacyModeOption" = "Mode de confidentialité %@";
+"accessibility.selectedPrivacyMode" = "Mode de confidentialité %@, sélectionné";
+"accessibility.zoomLevel" = "Niveau de zoom %d pour cent";
+"accessibility.continueButton" = "Continuer pour demander l'accès aux photos";
+"accessibility.openSettingsButton" = "Ouvrir les réglages de l'appareil";

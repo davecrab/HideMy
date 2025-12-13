@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Russian)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "Фото";
+"navigation.settings" = "Настройки";
+"navigation.save" = "Сохранить";
+"navigation.cancel" = "Отмена";
+"navigation.done" = "Готово";
+"navigation.back" = "Назад";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "Фото";
+"photoGrid.noPhotos.title" = "Нет фото";
+"photoGrid.noPhotos.description" = "Ваша фотобиблиотека пуста";
+"photoGrid.accessRequired.title" = "Требуется доступ к фото";
+"photoGrid.accessRequired.description" = "Пожалуйста, разрешите доступ к вашим фото в Настройках, чтобы использовать это приложение";
+"photoGrid.openSettings" = "Открыть Настройки";
+"photoGrid.loading" = "Загрузка фото...";
+"photoGrid.tooltip" = "Нажмите на фото, чтобы выбрать его для редактирования";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "Доступ к Фотобиблиотеке";
+"prePermission.browse.title" = "Просмотр Ваших Фото";
+"prePermission.browse.description" = "Выберите фото из вашей библиотеки для защиты лиц и личных данных.";
+"prePermission.save.title" = "Сохранение Защищённых Фото";
+"prePermission.save.description" = "Сохраните размытые фото обратно в вашу библиотеку как новые копии.";
+"prePermission.privacy.title" = "Ваша Конфиденциальность Важна";
+"prePermission.privacy.description" = "Фото обрабатываются на вашем устройстве. Ничего не загружается на сервер.";
+"prePermission.continue" = "Продолжить";
+"prePermission.changeInSettings" = "Вы можете изменить это позже в Настройках";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "Загрузка...";
+"photoEdit.saving" = "Сохранение...";
+"photoEdit.saved.title" = "Сохранено!";
+"photoEdit.saved.message" = "Фото успешно сохранено";
+"photoEdit.error.title" = "Ошибка";
+"photoEdit.saveDialog.title" = "Сохранить Фото";
+"photoEdit.saveToPhotos" = "Сохранить копию в Фото";
+"photoEdit.saveToFiles" = "Сохранить в Файлы";
+"photoEdit.tooltip.blur" = "Нажмите на лицо, чтобы выбрать его, затем нажмите Размыть";
+"photoEdit.tooltip.cover" = "Нажмите на лицо, чтобы выбрать его, затем нажмите Закрыть";
+"photoEdit.regions" = "%d областей";
+"photoEdit.selected" = "%d выбрано";
+"photoEdit.blurred" = "%d размыто";
+"photoEdit.intensity" = "Интенсивность:";
+"photoEdit.undo" = "Отменить";
+"photoEdit.selectAll" = "Все";
+"photoEdit.clearSelection" = "Очистить";
+"photoEdit.resetZoom" = "Сброс";
+"photoEdit.addRegion" = "Добавить";
+"photoEdit.blur" = "Размыть";
+"photoEdit.cover" = "Закрыть";
+"photoEdit.delete" = "Удалить";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "Настройки";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "Режим Конфиденциальности";
+"settings.privacyMode.footer" = "Выберите способ скрытия лиц. Режимы размытия необратимо уничтожают черты лица. Режимы рамки закрывают лица сплошным цветом.";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "Полное Размытие";
+"privacyMode.fullBlur.description" = "Пикселизация → Размытие → Пикселизация (максимальная защита)";
+"privacyMode.blurNoFinalPixelate" = "Размытие (Без Финальной Пикселизации)";
+"privacyMode.blurNoFinalPixelate.description" = "Пикселизация → Размытие (более мягкий вид)";
+"privacyMode.pixelateOnly" = "Только Пикселизация";
+"privacyMode.pixelateOnly.description" = "Только пикселизация (классическая мозаика)";
+"privacyMode.blackBox" = "Чёрная Рамка";
+"privacyMode.blackBox.description" = "Сплошной чёрный прямоугольник";
+"privacyMode.whiteBox" = "Белая Рамка";
+"privacyMode.whiteBox.description" = "Сплошной белый прямоугольник";
+"privacyMode.customBox" = "Рамка Своего Цвета";
+"privacyMode.customBox.description" = "Сплошной цвет на ваш выбор";
+
+// Custom Color Section
+"settings.customColor.header" = "Свой Цвет";
+"settings.customColor.footer" = "Выберите свой цвет для рамки, закрывающей лицо.";
+"settings.customColor.picker" = "Цвет Рамки";
+
+// Statistics Section
+"settings.statistics.header" = "Статистика";
+"settings.statistics.blurredCount" = "Количество Размытых Фото";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "Управление Размытыми Фото";
+"settings.managePhotos.footer" = "'Удалить Все Размытые Фото' навсегда удалит размытые копии, которые вы создали, из вашей Фотобиблиотеки. 'Очистить Историю' удаляет только данные отслеживания, не удаляя фото.";
+"settings.managePhotos.deleteAll" = "Удалить Все Размытые Фото из Фото";
+"settings.managePhotos.clearHistory" = "Очистить Историю Отслеживания";
+
+// History Section
+"settings.history.header" = "История";
+"settings.history.viewPhotos" = "Просмотр Размытых Фото";
+
+// Tips Section
+"settings.tips.header" = "Подсказки";
+"settings.tips.resetTooltips" = "Сбросить Подсказки";
+"settings.tips.footer" = "Показать полезные баннеры подсказок снова по всему приложению.";
+
+// About Section
+"settings.about.header" = "О Приложении";
+"settings.about.privacyTitle" = "Защита Конфиденциальности";
+"settings.about.privacyDescription" = "Лица скрываются с использованием выбранного режима конфиденциальности. Режимы размытия используют пикселизацию, которую нельзя обратить или восстановить.";
+
+// Alerts
+"alert.deleteAll.title" = "Удалить Все Размытые Фото?";
+"alert.deleteAll.message" = "Это навсегда удалит %d размытых фото из вашей Фотобиблиотеки. Это действие нельзя отменить.";
+"alert.deleteAll.confirm" = "Удалить Все";
+"alert.clearHistory.title" = "Очистить Историю Отслеживания?";
+"alert.clearHistory.message" = "Это очистит только историю отслеживания. Размытые фото останутся в вашей Фотобиблиотеке.";
+"alert.clearHistory.confirm" = "Очистить";
+"alert.deletionComplete.title" = "Удаление Завершено";
+"alert.deletionComplete.message" = "Успешно удалено %d фото. %d не удалось.";
+"alert.ok" = "OK";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "Размытые Фото";
+"blurredPhotosList.itemTitle" = "Размытое Фото";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "Лёгкая";
+"blurIntensity.medium" = "Средняя";
+"blurIntensity.strong" = "Сильная";
+"blurIntensity.maximum" = "Максимальная";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "Настройки";
+"accessibility.saveButton" = "Сохранить фото";
+"accessibility.undoButton" = "Отменить последнее действие";
+"accessibility.selectAllButton" = "Выбрать все области";
+"accessibility.clearSelectionButton" = "Очистить выбор";
+"accessibility.resetZoomButton" = "Сбросить масштаб и положение";
+"accessibility.addRegionButton" = "Добавить свою область";
+"accessibility.blurButton" = "Размыть выбранные области";
+"accessibility.coverButton" = "Закрыть выбранные области";
+"accessibility.deleteRegionButton" = "Удалить область";
+"accessibility.dismissTooltip" = "Закрыть подсказку";
+"accessibility.photoThumbnail" = "Миниатюра фото";
+"accessibility.blurredPhotoThumbnail" = "Миниатюра размытого фото";
+"accessibility.faceRegion" = "Область лица";
+"accessibility.selectedFaceRegion" = "Выбранная область лица";
+"accessibility.blurredFaceRegion" = "Размытая область лица";
+"accessibility.resizeHandle" = "Ручка изменения размера";
+"accessibility.intensitySlider" = "Ползунок интенсивности размытия";
+"accessibility.colorPicker" = "Выбор цвета рамки";
+"accessibility.privacyModeOption" = "Режим конфиденциальности %@";
+"accessibility.selectedPrivacyMode" = "Режим конфиденциальности %@, выбран";
+"accessibility.zoomLevel" = "Уровень масштаба %d процентов";
+"accessibility.continueButton" = "Продолжить для запроса доступа к фото";
+"accessibility.openSettingsButton" = "Открыть настройки устройства";

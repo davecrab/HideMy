@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Swedish)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "Foton";
+"navigation.settings" = "Inställningar";
+"navigation.save" = "Spara";
+"navigation.cancel" = "Avbryt";
+"navigation.done" = "Klar";
+"navigation.back" = "Tillbaka";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "Foton";
+"photoGrid.noPhotos.title" = "Inga Foton";
+"photoGrid.noPhotos.description" = "Ditt fotobibliotek är tomt";
+"photoGrid.accessRequired.title" = "Fotoåtkomst Krävs";
+"photoGrid.accessRequired.description" = "Vänligen ge åtkomst till dina foton i Inställningar för att använda denna app";
+"photoGrid.openSettings" = "Öppna Inställningar";
+"photoGrid.loading" = "Laddar Foton...";
+"photoGrid.tooltip" = "Tryck på ett foto för att välja det för redigering";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "Åtkomst till Fotobibliotek";
+"prePermission.browse.title" = "Bläddra i Dina Foton";
+"prePermission.browse.description" = "Välj foton från ditt bibliotek för att skydda ansikten och identiteter.";
+"prePermission.save.title" = "Spara Skyddade Foton";
+"prePermission.save.description" = "Spara suddiga foton tillbaka till ditt bibliotek som nya kopior.";
+"prePermission.privacy.title" = "Din Integritet Är Viktig";
+"prePermission.privacy.description" = "Foton bearbetas på din enhet. Inget laddas upp till någon server.";
+"prePermission.continue" = "Fortsätt";
+"prePermission.changeInSettings" = "Du kan ändra detta senare i Inställningar";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "Laddar...";
+"photoEdit.saving" = "Sparar...";
+"photoEdit.saved.title" = "Sparat!";
+"photoEdit.saved.message" = "Fotot har sparats";
+"photoEdit.error.title" = "Fel";
+"photoEdit.saveDialog.title" = "Spara Foto";
+"photoEdit.saveToPhotos" = "Spara Kopia till Foton";
+"photoEdit.saveToFiles" = "Spara till Filer";
+"photoEdit.tooltip.blur" = "Tryck på ett ansikte för att välja det, tryck sedan på Sudda";
+"photoEdit.tooltip.cover" = "Tryck på ett ansikte för att välja det, tryck sedan på Täck";
+"photoEdit.regions" = "%d områden";
+"photoEdit.selected" = "%d valda";
+"photoEdit.blurred" = "%d suddiga";
+"photoEdit.intensity" = "Intensitet:";
+"photoEdit.undo" = "Ångra";
+"photoEdit.selectAll" = "Alla";
+"photoEdit.clearSelection" = "Rensa";
+"photoEdit.resetZoom" = "Återställ";
+"photoEdit.addRegion" = "Lägg till";
+"photoEdit.blur" = "Sudda";
+"photoEdit.cover" = "Täck";
+"photoEdit.delete" = "Ta bort";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "Inställningar";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "Integritetsläge";
+"settings.privacyMode.footer" = "Välj hur ansikten döljs. Suddningslägen förstör ansiktsdrag oåterkalleligt. Rutlägen täcker ansikten med en solid färg.";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "Full Suddning";
+"privacyMode.fullBlur.description" = "Pixelera → Sudda → Pixelera (maximal integritet)";
+"privacyMode.blurNoFinalPixelate" = "Suddning (Utan Slutlig Pixelering)";
+"privacyMode.blurNoFinalPixelate.description" = "Pixelera → Sudda (mjukare utseende)";
+"privacyMode.pixelateOnly" = "Endast Pixelering";
+"privacyMode.pixelateOnly.description" = "Endast pixelering (klassisk mosaik)";
+"privacyMode.blackBox" = "Svart Ruta";
+"privacyMode.blackBox.description" = "Solid svart rektangel";
+"privacyMode.whiteBox" = "Vit Ruta";
+"privacyMode.whiteBox.description" = "Solid vit rektangel";
+"privacyMode.customBox" = "Anpassad Färgruta";
+"privacyMode.customBox.description" = "Solid färg efter eget val";
+
+// Custom Color Section
+"settings.customColor.header" = "Anpassad Färg";
+"settings.customColor.footer" = "Välj en anpassad färg för ansiktstäckningsrutan.";
+"settings.customColor.picker" = "Rutfärg";
+
+// Statistics Section
+"settings.statistics.header" = "Statistik";
+"settings.statistics.blurredCount" = "Antal Suddade Foton";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "Hantera Suddade Foton";
+"settings.managePhotos.footer" = "'Ta Bort Alla Suddade Foton' tar permanent bort de suddade kopiorna du skapat från ditt Fotobibliotek. 'Rensa Spårningshistorik' tar endast bort spårningsdata utan att ta bort några foton.";
+"settings.managePhotos.deleteAll" = "Ta Bort Alla Suddade Foton från Foton";
+"settings.managePhotos.clearHistory" = "Rensa Spårningshistorik";
+
+// History Section
+"settings.history.header" = "Historik";
+"settings.history.viewPhotos" = "Visa Suddade Foton";
+
+// Tips Section
+"settings.tips.header" = "Tips";
+"settings.tips.resetTooltips" = "Återställ Tipsmeddelanden";
+"settings.tips.footer" = "Visa de hjälpsamma tipsbanners igen i hela appen.";
+
+// About Section
+"settings.about.header" = "Om";
+"settings.about.privacyTitle" = "Integritetsskydd";
+"settings.about.privacyDescription" = "Ansikten döljs med det valda integritetsläget. Suddningslägen använder pixelering som inte kan återställas eller rekonstrueras.";
+
+// Alerts
+"alert.deleteAll.title" = "Ta Bort Alla Suddade Foton?";
+"alert.deleteAll.message" = "Detta tar permanent bort %d suddade foton från ditt Fotobibliotek. Denna åtgärd kan inte ångras.";
+"alert.deleteAll.confirm" = "Ta Bort Alla";
+"alert.clearHistory.title" = "Rensa Spårningshistorik?";
+"alert.clearHistory.message" = "Detta rensar endast spårningshistoriken. De suddade fotona finns kvar i ditt Fotobibliotek.";
+"alert.clearHistory.confirm" = "Rensa";
+"alert.deletionComplete.title" = "Borttagning Slutförd";
+"alert.deletionComplete.message" = "%d foton har tagits bort. %d misslyckades.";
+"alert.ok" = "OK";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "Suddade Foton";
+"blurredPhotosList.itemTitle" = "Suddat Foto";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "Lätt";
+"blurIntensity.medium" = "Medium";
+"blurIntensity.strong" = "Stark";
+"blurIntensity.maximum" = "Maximal";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "Inställningar";
+"accessibility.saveButton" = "Spara foto";
+"accessibility.undoButton" = "Ångra senaste åtgärd";
+"accessibility.selectAllButton" = "Välj alla områden";
+"accessibility.clearSelectionButton" = "Rensa val";
+"accessibility.resetZoomButton" = "Återställ zoom och position";
+"accessibility.addRegionButton" = "Lägg till anpassat område";
+"accessibility.blurButton" = "Sudda valda områden";
+"accessibility.coverButton" = "Täck valda områden";
+"accessibility.deleteRegionButton" = "Ta bort område";
+"accessibility.dismissTooltip" = "Stäng tips";
+"accessibility.photoThumbnail" = "Fotominiatyr";
+"accessibility.blurredPhotoThumbnail" = "Suddat fotominiatyr";
+"accessibility.faceRegion" = "Ansiktsområde";
+"accessibility.selectedFaceRegion" = "Valt ansiktsområde";
+"accessibility.blurredFaceRegion" = "Suddat ansiktsområde";
+"accessibility.resizeHandle" = "Storleksändringshandtag";
+"accessibility.intensitySlider" = "Skjutreglage för suddningsintensitet";
+"accessibility.colorPicker" = "Rutfärgsväljare";
+"accessibility.privacyModeOption" = "%@ integritetsläge";
+"accessibility.selectedPrivacyMode" = "%@ integritetsläge, valt";
+"accessibility.zoomLevel" = "Zoomnivå %d procent";
+"accessibility.continueButton" = "Fortsätt för att begära fotoåtkomst";
+"accessibility.openSettingsButton" = "Öppna enhetsinställningar";

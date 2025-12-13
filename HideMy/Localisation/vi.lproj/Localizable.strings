@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Vietnamese)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "Ảnh";
+"navigation.settings" = "Cài đặt";
+"navigation.save" = "Lưu";
+"navigation.cancel" = "Hủy";
+"navigation.done" = "Xong";
+"navigation.back" = "Quay lại";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "Ảnh";
+"photoGrid.noPhotos.title" = "Không có Ảnh";
+"photoGrid.noPhotos.description" = "Thư viện ảnh của bạn đang trống";
+"photoGrid.accessRequired.title" = "Cần Quyền Truy cập Ảnh";
+"photoGrid.accessRequired.description" = "Vui lòng cấp quyền truy cập ảnh trong Cài đặt để sử dụng ứng dụng này";
+"photoGrid.openSettings" = "Mở Cài đặt";
+"photoGrid.loading" = "Đang tải Ảnh...";
+"photoGrid.tooltip" = "Chạm vào ảnh để chọn và chỉnh sửa";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "Truy cập Thư viện Ảnh";
+"prePermission.browse.title" = "Duyệt Ảnh của Bạn";
+"prePermission.browse.description" = "Chọn ảnh từ thư viện để bảo vệ khuôn mặt và danh tính.";
+"prePermission.save.title" = "Lưu Ảnh Được Bảo vệ";
+"prePermission.save.description" = "Lưu ảnh đã làm mờ vào thư viện dưới dạng bản sao mới.";
+"prePermission.privacy.title" = "Quyền Riêng tư của Bạn Quan trọng";
+"prePermission.privacy.description" = "Ảnh được xử lý trên thiết bị của bạn. Không có gì được tải lên máy chủ.";
+"prePermission.continue" = "Tiếp tục";
+"prePermission.changeInSettings" = "Bạn có thể thay đổi điều này sau trong Cài đặt";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "Đang tải...";
+"photoEdit.saving" = "Đang lưu...";
+"photoEdit.saved.title" = "Đã lưu!";
+"photoEdit.saved.message" = "Ảnh đã được lưu thành công";
+"photoEdit.error.title" = "Lỗi";
+"photoEdit.saveDialog.title" = "Lưu Ảnh";
+"photoEdit.saveToPhotos" = "Lưu Bản sao vào Ảnh";
+"photoEdit.saveToFiles" = "Lưu vào Tệp";
+"photoEdit.tooltip.blur" = "Chạm vào khuôn mặt để chọn, sau đó nhấn Làm mờ";
+"photoEdit.tooltip.cover" = "Chạm vào khuôn mặt để chọn, sau đó nhấn Che";
+"photoEdit.regions" = "%d vùng";
+"photoEdit.selected" = "%d đã chọn";
+"photoEdit.blurred" = "%d đã làm mờ";
+"photoEdit.intensity" = "Cường độ:";
+"photoEdit.undo" = "Hoàn tác";
+"photoEdit.selectAll" = "Tất cả";
+"photoEdit.clearSelection" = "Xóa";
+"photoEdit.resetZoom" = "Đặt lại";
+"photoEdit.addRegion" = "Thêm";
+"photoEdit.blur" = "Làm mờ";
+"photoEdit.cover" = "Che";
+"photoEdit.delete" = "Xóa";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "Cài đặt";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "Chế độ Riêng tư";
+"settings.privacyMode.footer" = "Chọn cách ẩn khuôn mặt. Các chế độ làm mờ phá hủy đặc điểm khuôn mặt không thể khôi phục. Các chế độ hộp che khuôn mặt bằng màu đặc.";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "Làm mờ Toàn bộ";
+"privacyMode.fullBlur.description" = "Pixel hóa → Làm mờ → Pixel hóa (riêng tư tối đa)";
+"privacyMode.blurNoFinalPixelate" = "Làm mờ (Không Pixel hóa Cuối)";
+"privacyMode.blurNoFinalPixelate.description" = "Pixel hóa → Làm mờ (mượt hơn)";
+"privacyMode.pixelateOnly" = "Chỉ Pixel hóa";
+"privacyMode.pixelateOnly.description" = "Chỉ pixel hóa (khảm cổ điển)";
+"privacyMode.blackBox" = "Hộp Đen";
+"privacyMode.blackBox.description" = "Hình chữ nhật đen đặc";
+"privacyMode.whiteBox" = "Hộp Trắng";
+"privacyMode.whiteBox.description" = "Hình chữ nhật trắng đặc";
+"privacyMode.customBox" = "Hộp Màu Tùy chỉnh";
+"privacyMode.customBox.description" = "Màu đặc theo lựa chọn của bạn";
+
+// Custom Color Section
+"settings.customColor.header" = "Màu Tùy chỉnh";
+"settings.customColor.footer" = "Chọn màu tùy chỉnh cho hộp che khuôn mặt.";
+"settings.customColor.picker" = "Màu Hộp";
+
+// Statistics Section
+"settings.statistics.header" = "Thống kê";
+"settings.statistics.blurredCount" = "Số Ảnh Đã Làm mờ";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "Quản lý Ảnh Đã Làm mờ";
+"settings.managePhotos.footer" = "'Xóa Tất cả Ảnh Đã Làm mờ' sẽ xóa vĩnh viễn các bản sao đã làm mờ từ Thư viện Ảnh. 'Xóa Lịch sử Theo dõi' chỉ xóa dữ liệu theo dõi mà không xóa ảnh.";
+"settings.managePhotos.deleteAll" = "Xóa Tất cả Ảnh Đã Làm mờ khỏi Ảnh";
+"settings.managePhotos.clearHistory" = "Xóa Lịch sử Theo dõi";
+
+// History Section
+"settings.history.header" = "Lịch sử";
+"settings.history.viewPhotos" = "Xem Ảnh Đã Làm mờ";
+
+// Tips Section
+"settings.tips.header" = "Mẹo";
+"settings.tips.resetTooltips" = "Đặt lại Gợi ý";
+"settings.tips.footer" = "Hiển thị lại các banner mẹo hữu ích trong toàn bộ ứng dụng.";
+
+// About Section
+"settings.about.header" = "Giới thiệu";
+"settings.about.privacyTitle" = "Bảo vệ Quyền Riêng tư";
+"settings.about.privacyDescription" = "Khuôn mặt được ẩn bằng chế độ riêng tư đã chọn. Các chế độ làm mờ sử dụng pixel hóa không thể đảo ngược hoặc khôi phục.";
+
+// Alerts
+"alert.deleteAll.title" = "Xóa Tất cả Ảnh Đã Làm mờ?";
+"alert.deleteAll.message" = "Điều này sẽ xóa vĩnh viễn %d ảnh đã làm mờ khỏi Thư viện Ảnh. Hành động này không thể hoàn tác.";
+"alert.deleteAll.confirm" = "Xóa Tất cả";
+"alert.clearHistory.title" = "Xóa Lịch sử Theo dõi?";
+"alert.clearHistory.message" = "Điều này chỉ xóa lịch sử theo dõi. Các ảnh đã làm mờ sẽ vẫn còn trong Thư viện Ảnh.";
+"alert.clearHistory.confirm" = "Xóa";
+"alert.deletionComplete.title" = "Xóa Hoàn tất";
+"alert.deletionComplete.message" = "Đã xóa thành công %d ảnh. %d thất bại.";
+"alert.ok" = "OK";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "Ảnh Đã Làm mờ";
+"blurredPhotosList.itemTitle" = "Ảnh Đã Làm mờ";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "Nhẹ";
+"blurIntensity.medium" = "Trung bình";
+"blurIntensity.strong" = "Mạnh";
+"blurIntensity.maximum" = "Tối đa";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "Cài đặt";
+"accessibility.saveButton" = "Lưu ảnh";
+"accessibility.undoButton" = "Hoàn tác hành động cuối";
+"accessibility.selectAllButton" = "Chọn tất cả vùng";
+"accessibility.clearSelectionButton" = "Xóa lựa chọn";
+"accessibility.resetZoomButton" = "Đặt lại thu phóng và vị trí";
+"accessibility.addRegionButton" = "Thêm vùng tùy chỉnh";
+"accessibility.blurButton" = "Làm mờ vùng đã chọn";
+"accessibility.coverButton" = "Che vùng đã chọn";
+"accessibility.deleteRegionButton" = "Xóa vùng";
+"accessibility.dismissTooltip" = "Đóng mẹo";
+"accessibility.photoThumbnail" = "Hình thu nhỏ ảnh";
+"accessibility.blurredPhotoThumbnail" = "Hình thu nhỏ ảnh đã làm mờ";
+"accessibility.faceRegion" = "Vùng khuôn mặt";
+"accessibility.selectedFaceRegion" = "Vùng khuôn mặt đã chọn";
+"accessibility.blurredFaceRegion" = "Vùng khuôn mặt đã làm mờ";
+"accessibility.resizeHandle" = "Tay cầm thay đổi kích thước";
+"accessibility.intensitySlider" = "Thanh trượt cường độ làm mờ";
+"accessibility.colorPicker" = "Bộ chọn màu hộp";
+"accessibility.privacyModeOption" = "Chế độ riêng tư %@";
+"accessibility.selectedPrivacyMode" = "Chế độ riêng tư %@, đã chọn";
+"accessibility.zoomLevel" = "Mức thu phóng %d phần trăm";
+"accessibility.continueButton" = "Tiếp tục để yêu cầu quyền truy cập ảnh";
+"accessibility.openSettingsButton" = "Mở cài đặt thiết bị";

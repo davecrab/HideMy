@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Indonesian)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "Foto";
+"navigation.settings" = "Pengaturan";
+"navigation.save" = "Simpan";
+"navigation.cancel" = "Batal";
+"navigation.done" = "Selesai";
+"navigation.back" = "Kembali";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "Foto";
+"photoGrid.noPhotos.title" = "Tidak Ada Foto";
+"photoGrid.noPhotos.description" = "Perpustakaan foto Anda kosong";
+"photoGrid.accessRequired.title" = "Akses Foto Diperlukan";
+"photoGrid.accessRequired.description" = "Mohon izinkan akses ke foto Anda di Pengaturan untuk menggunakan aplikasi ini";
+"photoGrid.openSettings" = "Buka Pengaturan";
+"photoGrid.loading" = "Memuat Foto...";
+"photoGrid.tooltip" = "Ketuk foto untuk memilih dan mengedit";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "Akses Perpustakaan Foto";
+"prePermission.browse.title" = "Jelajahi Foto Anda";
+"prePermission.browse.description" = "Pilih foto dari perpustakaan Anda untuk melindungi wajah dan identitas.";
+"prePermission.save.title" = "Simpan Foto yang Dilindungi";
+"prePermission.save.description" = "Simpan foto yang diburamkan kembali ke perpustakaan Anda sebagai salinan baru.";
+"prePermission.privacy.title" = "Privasi Anda Penting";
+"prePermission.privacy.description" = "Foto diproses di perangkat Anda. Tidak ada yang diunggah ke server manapun.";
+"prePermission.continue" = "Lanjutkan";
+"prePermission.changeInSettings" = "Anda dapat mengubah ini nanti di Pengaturan";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "Memuat...";
+"photoEdit.saving" = "Menyimpan...";
+"photoEdit.saved.title" = "Tersimpan!";
+"photoEdit.saved.message" = "Foto berhasil disimpan";
+"photoEdit.error.title" = "Kesalahan";
+"photoEdit.saveDialog.title" = "Simpan Foto";
+"photoEdit.saveToPhotos" = "Simpan Salinan ke Foto";
+"photoEdit.saveToFiles" = "Simpan ke File";
+"photoEdit.tooltip.blur" = "Ketuk wajah untuk memilih, lalu tekan Buramkan";
+"photoEdit.tooltip.cover" = "Ketuk wajah untuk memilih, lalu tekan Tutupi";
+"photoEdit.regions" = "%d area";
+"photoEdit.selected" = "%d dipilih";
+"photoEdit.blurred" = "%d diburamkan";
+"photoEdit.intensity" = "Intensitas:";
+"photoEdit.undo" = "Urungkan";
+"photoEdit.selectAll" = "Semua";
+"photoEdit.clearSelection" = "Hapus";
+"photoEdit.resetZoom" = "Reset";
+"photoEdit.addRegion" = "Tambah";
+"photoEdit.blur" = "Buramkan";
+"photoEdit.cover" = "Tutupi";
+"photoEdit.delete" = "Hapus";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "Pengaturan";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "Mode Privasi";
+"settings.privacyMode.footer" = "Pilih cara menyembunyikan wajah. Mode blur menghancurkan fitur wajah secara permanen. Mode kotak menutupi wajah dengan warna solid.";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "Blur Penuh";
+"privacyMode.fullBlur.description" = "Pikselasi → Blur → Pikselasi (privasi maksimal)";
+"privacyMode.blurNoFinalPixelate" = "Blur (Tanpa Pikselasi Akhir)";
+"privacyMode.blurNoFinalPixelate.description" = "Pikselasi → Blur (tampilan lebih halus)";
+"privacyMode.pixelateOnly" = "Pikselasi Saja";
+"privacyMode.pixelateOnly.description" = "Hanya pikselasi (mosaik klasik)";
+"privacyMode.blackBox" = "Kotak Hitam";
+"privacyMode.blackBox.description" = "Persegi panjang hitam solid";
+"privacyMode.whiteBox" = "Kotak Putih";
+"privacyMode.whiteBox.description" = "Persegi panjang putih solid";
+"privacyMode.customBox" = "Kotak Warna Kustom";
+"privacyMode.customBox.description" = "Warna solid pilihan Anda";
+
+// Custom Color Section
+"settings.customColor.header" = "Warna Kustom";
+"settings.customColor.footer" = "Pilih warna kustom untuk kotak penutup wajah.";
+"settings.customColor.picker" = "Warna Kotak";
+
+// Statistics Section
+"settings.statistics.header" = "Statistik";
+"settings.statistics.blurredCount" = "Jumlah Foto yang Diburamkan";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "Kelola Foto yang Diburamkan";
+"settings.managePhotos.footer" = "'Hapus Semua Foto yang Diburamkan' akan menghapus secara permanen salinan yang diburamkan dari Perpustakaan Foto Anda. 'Hapus Riwayat Pelacakan' hanya menghapus data pelacakan tanpa menghapus foto apapun.";
+"settings.managePhotos.deleteAll" = "Hapus Semua Foto yang Diburamkan dari Foto";
+"settings.managePhotos.clearHistory" = "Hapus Riwayat Pelacakan";
+
+// History Section
+"settings.history.header" = "Riwayat";
+"settings.history.viewPhotos" = "Lihat Foto yang Diburamkan";
+
+// Tips Section
+"settings.tips.header" = "Tips";
+"settings.tips.resetTooltips" = "Reset Petunjuk";
+"settings.tips.footer" = "Tampilkan kembali banner tips yang berguna di seluruh aplikasi.";
+
+// About Section
+"settings.about.header" = "Tentang";
+"settings.about.privacyTitle" = "Perlindungan Privasi";
+"settings.about.privacyDescription" = "Wajah disembunyikan menggunakan mode privasi yang dipilih. Mode blur menggunakan pikselasi yang tidak dapat dikembalikan atau direkonstruksi.";
+
+// Alerts
+"alert.deleteAll.title" = "Hapus Semua Foto yang Diburamkan?";
+"alert.deleteAll.message" = "Ini akan menghapus secara permanen %d foto yang diburamkan dari Perpustakaan Foto Anda. Tindakan ini tidak dapat dibatalkan.";
+"alert.deleteAll.confirm" = "Hapus Semua";
+"alert.clearHistory.title" = "Hapus Riwayat Pelacakan?";
+"alert.clearHistory.message" = "Ini hanya akan menghapus riwayat pelacakan. Foto yang diburamkan akan tetap ada di Perpustakaan Foto Anda.";
+"alert.clearHistory.confirm" = "Hapus";
+"alert.deletionComplete.title" = "Penghapusan Selesai";
+"alert.deletionComplete.message" = "Berhasil menghapus %d foto. %d gagal.";
+"alert.ok" = "OK";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "Foto yang Diburamkan";
+"blurredPhotosList.itemTitle" = "Foto yang Diburamkan";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "Ringan";
+"blurIntensity.medium" = "Sedang";
+"blurIntensity.strong" = "Kuat";
+"blurIntensity.maximum" = "Maksimal";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "Pengaturan";
+"accessibility.saveButton" = "Simpan foto";
+"accessibility.undoButton" = "Urungkan tindakan terakhir";
+"accessibility.selectAllButton" = "Pilih semua area";
+"accessibility.clearSelectionButton" = "Hapus pilihan";
+"accessibility.resetZoomButton" = "Reset zoom dan posisi";
+"accessibility.addRegionButton" = "Tambah area kustom";
+"accessibility.blurButton" = "Buramkan area yang dipilih";
+"accessibility.coverButton" = "Tutupi area yang dipilih";
+"accessibility.deleteRegionButton" = "Hapus area";
+"accessibility.dismissTooltip" = "Tutup tips";
+"accessibility.photoThumbnail" = "Thumbnail foto";
+"accessibility.blurredPhotoThumbnail" = "Thumbnail foto yang diburamkan";
+"accessibility.faceRegion" = "Area wajah";
+"accessibility.selectedFaceRegion" = "Area wajah yang dipilih";
+"accessibility.blurredFaceRegion" = "Area wajah yang diburamkan";
+"accessibility.resizeHandle" = "Pegangan ubah ukuran";
+"accessibility.intensitySlider" = "Slider intensitas blur";
+"accessibility.colorPicker" = "Pemilih warna kotak";
+"accessibility.privacyModeOption" = "Mode privasi %@";
+"accessibility.selectedPrivacyMode" = "Mode privasi %@, dipilih";
+"accessibility.zoomLevel" = "Tingkat zoom %d persen";
+"accessibility.continueButton" = "Lanjutkan untuk meminta akses foto";
+"accessibility.openSettingsButton" = "Buka pengaturan perangkat";

@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Arabic)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "الصور";
+"navigation.settings" = "الإعدادات";
+"navigation.save" = "حفظ";
+"navigation.cancel" = "إلغاء";
+"navigation.done" = "تم";
+"navigation.back" = "رجوع";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "الصور";
+"photoGrid.noPhotos.title" = "لا توجد صور";
+"photoGrid.noPhotos.description" = "مكتبة الصور الخاصة بك فارغة";
+"photoGrid.accessRequired.title" = "مطلوب الوصول للصور";
+"photoGrid.accessRequired.description" = "يرجى السماح بالوصول إلى صورك في الإعدادات لاستخدام هذا التطبيق";
+"photoGrid.openSettings" = "فتح الإعدادات";
+"photoGrid.loading" = "جارٍ تحميل الصور...";
+"photoGrid.tooltip" = "انقر على صورة لتحديدها للتعديل";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "الوصول إلى مكتبة الصور";
+"prePermission.browse.title" = "تصفح صورك";
+"prePermission.browse.description" = "اختر صورًا من مكتبتك لحماية الوجوه والهويات.";
+"prePermission.save.title" = "حفظ الصور المحمية";
+"prePermission.save.description" = "احفظ الصور المموهة في مكتبتك كنسخ جديدة.";
+"prePermission.privacy.title" = "خصوصيتك مهمة";
+"prePermission.privacy.description" = "تتم معالجة الصور على جهازك. لا يتم رفع أي شيء إلى أي خادم.";
+"prePermission.continue" = "متابعة";
+"prePermission.changeInSettings" = "يمكنك تغيير هذا لاحقًا في الإعدادات";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "جارٍ التحميل...";
+"photoEdit.saving" = "جارٍ الحفظ...";
+"photoEdit.saved.title" = "تم الحفظ!";
+"photoEdit.saved.message" = "تم حفظ الصورة بنجاح";
+"photoEdit.error.title" = "خطأ";
+"photoEdit.saveDialog.title" = "حفظ الصورة";
+"photoEdit.saveToPhotos" = "حفظ نسخة في الصور";
+"photoEdit.saveToFiles" = "حفظ في الملفات";
+"photoEdit.tooltip.blur" = "انقر على وجه لتحديده، ثم اضغط تمويه";
+"photoEdit.tooltip.cover" = "انقر على وجه لتحديده، ثم اضغط تغطية";
+"photoEdit.regions" = "%d مناطق";
+"photoEdit.selected" = "%d محدد";
+"photoEdit.blurred" = "%d مموه";
+"photoEdit.intensity" = "الشدة:";
+"photoEdit.undo" = "تراجع";
+"photoEdit.selectAll" = "الكل";
+"photoEdit.clearSelection" = "مسح";
+"photoEdit.resetZoom" = "إعادة";
+"photoEdit.addRegion" = "إضافة";
+"photoEdit.blur" = "تمويه";
+"photoEdit.cover" = "تغطية";
+"photoEdit.delete" = "حذف";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "الإعدادات";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "وضع الخصوصية";
+"settings.privacyMode.footer" = "اختر كيفية إخفاء الوجوه. أوضاع التمويه تدمر ملامح الوجه بشكل لا رجعة فيه. أوضاع المربع تغطي الوجوه بلون صلب.";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "تمويه كامل";
+"privacyMode.fullBlur.description" = "بكسلة ← تمويه ← بكسلة (أقصى خصوصية)";
+"privacyMode.blurNoFinalPixelate" = "تمويه (بدون بكسلة نهائية)";
+"privacyMode.blurNoFinalPixelate.description" = "بكسلة ← تمويه (مظهر أكثر نعومة)";
+"privacyMode.pixelateOnly" = "بكسلة فقط";
+"privacyMode.pixelateOnly.description" = "بكسلة فقط (فسيفساء كلاسيكية)";
+"privacyMode.blackBox" = "مربع أسود";
+"privacyMode.blackBox.description" = "مستطيل أسود صلب";
+"privacyMode.whiteBox" = "مربع أبيض";
+"privacyMode.whiteBox.description" = "مستطيل أبيض صلب";
+"privacyMode.customBox" = "مربع بلون مخصص";
+"privacyMode.customBox.description" = "لون صلب من اختيارك";
+
+// Custom Color Section
+"settings.customColor.header" = "لون مخصص";
+"settings.customColor.footer" = "اختر لونًا مخصصًا لمربع تغطية الوجه.";
+"settings.customColor.picker" = "لون المربع";
+
+// Statistics Section
+"settings.statistics.header" = "الإحصائيات";
+"settings.statistics.blurredCount" = "عدد الصور المموهة";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "إدارة الصور المموهة";
+"settings.managePhotos.footer" = "'حذف جميع الصور المموهة' سيحذف نهائيًا النسخ المموهة التي أنشأتها من مكتبة الصور. 'مسح سجل التتبع' يزيل فقط بيانات التتبع دون حذف أي صور.";
+"settings.managePhotos.deleteAll" = "حذف جميع الصور المموهة من الصور";
+"settings.managePhotos.clearHistory" = "مسح سجل التتبع";
+
+// History Section
+"settings.history.header" = "السجل";
+"settings.history.viewPhotos" = "عرض الصور المموهة";
+
+// Tips Section
+"settings.tips.header" = "نصائح";
+"settings.tips.resetTooltips" = "إعادة تعيين تلميحات الأدوات";
+"settings.tips.footer" = "إظهار لافتات النصائح المفيدة مرة أخرى في جميع أنحاء التطبيق.";
+
+// About Section
+"settings.about.header" = "حول";
+"settings.about.privacyTitle" = "حماية الخصوصية";
+"settings.about.privacyDescription" = "يتم إخفاء الوجوه باستخدام وضع الخصوصية المحدد. تستخدم أوضاع التمويه البكسلة التي لا يمكن عكسها أو إعادة بنائها.";
+
+// Alerts
+"alert.deleteAll.title" = "حذف جميع الصور المموهة؟";
+"alert.deleteAll.message" = "سيؤدي هذا إلى حذف %d صورة مموهة نهائيًا من مكتبة الصور. لا يمكن التراجع عن هذا الإجراء.";
+"alert.deleteAll.confirm" = "حذف الكل";
+"alert.clearHistory.title" = "مسح سجل التتبع؟";
+"alert.clearHistory.message" = "سيؤدي هذا فقط إلى مسح سجل التتبع. ستبقى الصور المموهة في مكتبة الصور.";
+"alert.clearHistory.confirm" = "مسح";
+"alert.deletionComplete.title" = "اكتمل الحذف";
+"alert.deletionComplete.message" = "تم حذف %d صورة بنجاح. فشل %d.";
+"alert.ok" = "حسنًا";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "الصور المموهة";
+"blurredPhotosList.itemTitle" = "صورة مموهة";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "خفيف";
+"blurIntensity.medium" = "متوسط";
+"blurIntensity.strong" = "قوي";
+"blurIntensity.maximum" = "أقصى";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "الإعدادات";
+"accessibility.saveButton" = "حفظ الصورة";
+"accessibility.undoButton" = "التراجع عن الإجراء الأخير";
+"accessibility.selectAllButton" = "تحديد جميع المناطق";
+"accessibility.clearSelectionButton" = "مسح التحديد";
+"accessibility.resetZoomButton" = "إعادة تعيين التكبير والموضع";
+"accessibility.addRegionButton" = "إضافة منطقة مخصصة";
+"accessibility.blurButton" = "تمويه المناطق المحددة";
+"accessibility.coverButton" = "تغطية المناطق المحددة";
+"accessibility.deleteRegionButton" = "حذف المنطقة";
+"accessibility.dismissTooltip" = "إغلاق النصيحة";
+"accessibility.photoThumbnail" = "صورة مصغرة";
+"accessibility.blurredPhotoThumbnail" = "صورة مصغرة مموهة";
+"accessibility.faceRegion" = "منطقة الوجه";
+"accessibility.selectedFaceRegion" = "منطقة وجه محددة";
+"accessibility.blurredFaceRegion" = "منطقة وجه مموهة";
+"accessibility.resizeHandle" = "مقبض تغيير الحجم";
+"accessibility.intensitySlider" = "شريط تمرير شدة التمويه";
+"accessibility.colorPicker" = "منتقي لون المربع";
+"accessibility.privacyModeOption" = "وضع الخصوصية %@";
+"accessibility.selectedPrivacyMode" = "وضع الخصوصية %@، محدد";
+"accessibility.zoomLevel" = "مستوى التكبير %d بالمائة";
+"accessibility.continueButton" = "متابعة لطلب الوصول للصور";
+"accessibility.openSettingsButton" = "فتح إعدادات الجهاز";

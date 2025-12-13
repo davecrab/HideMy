@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Thai)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "รูปภาพ";
+"navigation.settings" = "การตั้งค่า";
+"navigation.save" = "บันทึก";
+"navigation.cancel" = "ยกเลิก";
+"navigation.done" = "เสร็จสิ้น";
+"navigation.back" = "กลับ";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "รูปภาพ";
+"photoGrid.noPhotos.title" = "ไม่มีรูปภาพ";
+"photoGrid.noPhotos.description" = "คลังรูปภาพของคุณว่างเปล่า";
+"photoGrid.accessRequired.title" = "ต้องการสิทธิ์เข้าถึงรูปภาพ";
+"photoGrid.accessRequired.description" = "กรุณาอนุญาตการเข้าถึงรูปภาพในการตั้งค่าเพื่อใช้แอปนี้";
+"photoGrid.openSettings" = "เปิดการตั้งค่า";
+"photoGrid.loading" = "กำลังโหลดรูปภาพ...";
+"photoGrid.tooltip" = "แตะที่รูปภาพเพื่อเลือกและแก้ไข";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "การเข้าถึงคลังรูปภาพ";
+"prePermission.browse.title" = "เรียกดูรูปภาพของคุณ";
+"prePermission.browse.description" = "เลือกรูปภาพจากคลังเพื่อปกป้องใบหน้าและตัวตน";
+"prePermission.save.title" = "บันทึกรูปภาพที่ได้รับการปกป้อง";
+"prePermission.save.description" = "บันทึกรูปภาพที่เบลอแล้วเป็นสำเนาใหม่ในคลังของคุณ";
+"prePermission.privacy.title" = "ความเป็นส่วนตัวของคุณสำคัญ";
+"prePermission.privacy.description" = "รูปภาพถูกประมวลผลบนอุปกรณ์ของคุณ ไม่มีอะไรถูกอัปโหลดไปยังเซิร์ฟเวอร์";
+"prePermission.continue" = "ดำเนินการต่อ";
+"prePermission.changeInSettings" = "คุณสามารถเปลี่ยนแปลงได้ในการตั้งค่าภายหลัง";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "กำลังโหลด...";
+"photoEdit.saving" = "กำลังบันทึก...";
+"photoEdit.saved.title" = "บันทึกแล้ว!";
+"photoEdit.saved.message" = "บันทึกรูปภาพสำเร็จ";
+"photoEdit.error.title" = "ข้อผิดพลาด";
+"photoEdit.saveDialog.title" = "บันทึกรูปภาพ";
+"photoEdit.saveToPhotos" = "บันทึกสำเนาไปยังรูปภาพ";
+"photoEdit.saveToFiles" = "บันทึกไปยังไฟล์";
+"photoEdit.tooltip.blur" = "แตะที่ใบหน้าเพื่อเลือก จากนั้นกดเบลอ";
+"photoEdit.tooltip.cover" = "แตะที่ใบหน้าเพื่อเลือก จากนั้นกดปิดบัง";
+"photoEdit.regions" = "%d พื้นที่";
+"photoEdit.selected" = "%d ที่เลือก";
+"photoEdit.blurred" = "%d ที่เบลอแล้ว";
+"photoEdit.intensity" = "ความเข้ม:";
+"photoEdit.undo" = "เลิกทำ";
+"photoEdit.selectAll" = "ทั้งหมด";
+"photoEdit.clearSelection" = "ล้าง";
+"photoEdit.resetZoom" = "รีเซ็ต";
+"photoEdit.addRegion" = "เพิ่ม";
+"photoEdit.blur" = "เบลอ";
+"photoEdit.cover" = "ปิดบัง";
+"photoEdit.delete" = "ลบ";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "การตั้งค่า";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "โหมดความเป็นส่วนตัว";
+"settings.privacyMode.footer" = "เลือกวิธีซ่อนใบหน้า โหมดเบลอจะทำลายลักษณะใบหน้าอย่างถาวร โหมดกล่องจะปิดบังใบหน้าด้วยสีทึบ";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "เบลอเต็มรูปแบบ";
+"privacyMode.fullBlur.description" = "พิกเซล → เบลอ → พิกเซล (ความเป็นส่วนตัวสูงสุด)";
+"privacyMode.blurNoFinalPixelate" = "เบลอ (ไม่มีพิกเซลสุดท้าย)";
+"privacyMode.blurNoFinalPixelate.description" = "พิกเซล → เบลอ (ดูเรียบเนียนกว่า)";
+"privacyMode.pixelateOnly" = "พิกเซลเท่านั้น";
+"privacyMode.pixelateOnly.description" = "พิกเซลเท่านั้น (โมเสกแบบคลาสสิก)";
+"privacyMode.blackBox" = "กล่องดำ";
+"privacyMode.blackBox.description" = "สี่เหลี่ยมสีดำทึบ";
+"privacyMode.whiteBox" = "กล่องขาว";
+"privacyMode.whiteBox.description" = "สี่เหลี่ยมสีขาวทึบ";
+"privacyMode.customBox" = "กล่องสีกำหนดเอง";
+"privacyMode.customBox.description" = "สีทึบตามที่คุณเลือก";
+
+// Custom Color Section
+"settings.customColor.header" = "สีกำหนดเอง";
+"settings.customColor.footer" = "เลือกสีกำหนดเองสำหรับกล่องปิดบังใบหน้า";
+"settings.customColor.picker" = "สีกล่อง";
+
+// Statistics Section
+"settings.statistics.header" = "สถิติ";
+"settings.statistics.blurredCount" = "จำนวนรูปภาพที่เบลอแล้ว";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "จัดการรูปภาพที่เบลอแล้ว";
+"settings.managePhotos.footer" = "'ลบรูปภาพที่เบลอแล้วทั้งหมด' จะลบสำเนาที่เบลอแล้วออกจากคลังรูปภาพอย่างถาวร 'ล้างประวัติการติดตาม' จะลบเฉพาะข้อมูลการติดตามโดยไม่ลบรูปภาพ";
+"settings.managePhotos.deleteAll" = "ลบรูปภาพที่เบลอแล้วทั้งหมดจากรูปภาพ";
+"settings.managePhotos.clearHistory" = "ล้างประวัติการติดตาม";
+
+// History Section
+"settings.history.header" = "ประวัติ";
+"settings.history.viewPhotos" = "ดูรูปภาพที่เบลอแล้ว";
+
+// Tips Section
+"settings.tips.header" = "เคล็ดลับ";
+"settings.tips.resetTooltips" = "รีเซ็ตคำแนะนำ";
+"settings.tips.footer" = "แสดงแบนเนอร์เคล็ดลับที่เป็นประโยชน์อีกครั้งทั่วทั้งแอป";
+
+// About Section
+"settings.about.header" = "เกี่ยวกับ";
+"settings.about.privacyTitle" = "การปกป้องความเป็นส่วนตัว";
+"settings.about.privacyDescription" = "ใบหน้าถูกซ่อนโดยใช้โหมดความเป็นส่วนตัวที่เลือก โหมดเบลอใช้การพิกเซลที่ไม่สามารถย้อนกลับหรือสร้างใหม่ได้";
+
+// Alerts
+"alert.deleteAll.title" = "ลบรูปภาพที่เบลอแล้วทั้งหมด?";
+"alert.deleteAll.message" = "การดำเนินการนี้จะลบรูปภาพที่เบลอแล้ว %d รูปออกจากคลังรูปภาพอย่างถาวร ไม่สามารถเลิกทำได้";
+"alert.deleteAll.confirm" = "ลบทั้งหมด";
+"alert.clearHistory.title" = "ล้างประวัติการติดตาม?";
+"alert.clearHistory.message" = "การดำเนินการนี้จะล้างเฉพาะประวัติการติดตาม รูปภาพที่เบลอแล้วจะยังคงอยู่ในคลังรูปภาพ";
+"alert.clearHistory.confirm" = "ล้าง";
+"alert.deletionComplete.title" = "ลบเสร็จสิ้น";
+"alert.deletionComplete.message" = "ลบรูปภาพสำเร็จ %d รูป ล้มเหลว %d รูป";
+"alert.ok" = "ตกลง";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "รูปภาพที่เบลอแล้ว";
+"blurredPhotosList.itemTitle" = "รูปภาพที่เบลอแล้ว";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "เบา";
+"blurIntensity.medium" = "ปานกลาง";
+"blurIntensity.strong" = "แรง";
+"blurIntensity.maximum" = "สูงสุด";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "การตั้งค่า";
+"accessibility.saveButton" = "บันทึกรูปภาพ";
+"accessibility.undoButton" = "เลิกทำการกระทำล่าสุด";
+"accessibility.selectAllButton" = "เลือกพื้นที่ทั้งหมด";
+"accessibility.clearSelectionButton" = "ล้างการเลือก";
+"accessibility.resetZoomButton" = "รีเซ็ตการซูมและตำแหน่ง";
+"accessibility.addRegionButton" = "เพิ่มพื้นที่กำหนดเอง";
+"accessibility.blurButton" = "เบลอพื้นที่ที่เลือก";
+"accessibility.coverButton" = "ปิดบังพื้นที่ที่เลือก";
+"accessibility.deleteRegionButton" = "ลบพื้นที่";
+"accessibility.dismissTooltip" = "ปิดเคล็ดลับ";
+"accessibility.photoThumbnail" = "รูปย่อของรูปภาพ";
+"accessibility.blurredPhotoThumbnail" = "รูปย่อของรูปภาพที่เบลอแล้ว";
+"accessibility.faceRegion" = "พื้นที่ใบหน้า";
+"accessibility.selectedFaceRegion" = "พื้นที่ใบหน้าที่เลือก";
+"accessibility.blurredFaceRegion" = "พื้นที่ใบหน้าที่เบลอแล้ว";
+"accessibility.resizeHandle" = "ที่จับปรับขนาด";
+"accessibility.intensitySlider" = "แถบเลื่อนความเข้มของการเบลอ";
+"accessibility.colorPicker" = "ตัวเลือกสีกล่อง";
+"accessibility.privacyModeOption" = "โหมดความเป็นส่วนตัว %@";
+"accessibility.selectedPrivacyMode" = "โหมดความเป็นส่วนตัว %@ ถูกเลือก";
+"accessibility.zoomLevel" = "ระดับการซูม %d เปอร์เซ็นต์";
+"accessibility.continueButton" = "ดำเนินการต่อเพื่อขอสิทธิ์เข้าถึงรูปภาพ";
+"accessibility.openSettingsButton" = "เปิดการตั้งค่าอุปกรณ์";

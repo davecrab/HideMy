@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Traditional Chinese)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "照片";
+"navigation.settings" = "設定";
+"navigation.save" = "儲存";
+"navigation.cancel" = "取消";
+"navigation.done" = "完成";
+"navigation.back" = "返回";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "照片";
+"photoGrid.noPhotos.title" = "沒有照片";
+"photoGrid.noPhotos.description" = "您的照片圖庫是空的";
+"photoGrid.accessRequired.title" = "需要照片存取權限";
+"photoGrid.accessRequired.description" = "請在設定中授予照片存取權限以使用此應用程式";
+"photoGrid.openSettings" = "開啟設定";
+"photoGrid.loading" = "正在載入照片...";
+"photoGrid.tooltip" = "點選照片以選取並編輯";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "照片圖庫存取權限";
+"prePermission.browse.title" = "瀏覽您的照片";
+"prePermission.browse.description" = "從您的照片圖庫中選取照片以保護臉部和身份。";
+"prePermission.save.title" = "儲存受保護的照片";
+"prePermission.save.description" = "將模糊處理後的照片作為新副本儲存到您的照片圖庫。";
+"prePermission.privacy.title" = "您的隱私很重要";
+"prePermission.privacy.description" = "照片在您的裝置上處理，不會上傳到任何伺服器。";
+"prePermission.continue" = "繼續";
+"prePermission.changeInSettings" = "您可以稍後在設定中更改";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "載入中...";
+"photoEdit.saving" = "儲存中...";
+"photoEdit.saved.title" = "已儲存!";
+"photoEdit.saved.message" = "照片儲存成功";
+"photoEdit.error.title" = "錯誤";
+"photoEdit.saveDialog.title" = "儲存照片";
+"photoEdit.saveToPhotos" = "儲存副本到照片";
+"photoEdit.saveToFiles" = "儲存到檔案";
+"photoEdit.tooltip.blur" = "點選臉部以選取，然後按模糊";
+"photoEdit.tooltip.cover" = "點選臉部以選取，然後按遮蓋";
+"photoEdit.regions" = "%d 個區域";
+"photoEdit.selected" = "%d 個已選取";
+"photoEdit.blurred" = "%d 個已模糊";
+"photoEdit.intensity" = "強度:";
+"photoEdit.undo" = "復原";
+"photoEdit.selectAll" = "全選";
+"photoEdit.clearSelection" = "清除";
+"photoEdit.resetZoom" = "重設";
+"photoEdit.addRegion" = "新增";
+"photoEdit.blur" = "模糊";
+"photoEdit.cover" = "遮蓋";
+"photoEdit.delete" = "刪除";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "設定";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "隱私模式";
+"settings.privacyMode.footer" = "選擇隱藏臉部的方式。模糊模式會不可逆地破壞臉部特徵。方框模式用純色覆蓋臉部。";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "完全模糊";
+"privacyMode.fullBlur.description" = "像素化 - 模糊 - 像素化 (最高隱私)";
+"privacyMode.blurNoFinalPixelate" = "模糊 (無最終像素化)";
+"privacyMode.blurNoFinalPixelate.description" = "像素化 - 模糊 (更平滑的效果)";
+"privacyMode.pixelateOnly" = "僅像素化";
+"privacyMode.pixelateOnly.description" = "僅像素化 (經典馬賽克)";
+"privacyMode.blackBox" = "黑色方框";
+"privacyMode.blackBox.description" = "純黑色矩形";
+"privacyMode.whiteBox" = "白色方框";
+"privacyMode.whiteBox.description" = "純白色矩形";
+"privacyMode.customBox" = "自訂顏色方框";
+"privacyMode.customBox.description" = "您選擇的純色";
+
+// Custom Color Section
+"settings.customColor.header" = "自訂顏色";
+"settings.customColor.footer" = "為臉部遮蓋方框選擇自訂顏色。";
+"settings.customColor.picker" = "方框顏色";
+
+// Statistics Section
+"settings.statistics.header" = "統計";
+"settings.statistics.blurredCount" = "已模糊照片數量";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "管理模糊照片";
+"settings.managePhotos.footer" = "刪除所有模糊照片將永久刪除您在照片圖庫中建立的模糊副本。清除追蹤記錄僅刪除追蹤資料，不刪除任何照片。";
+"settings.managePhotos.deleteAll" = "刪除所有模糊照片";
+"settings.managePhotos.clearHistory" = "清除追蹤記錄";
+
+// History Section
+"settings.history.header" = "歷史記錄";
+"settings.history.viewPhotos" = "檢視模糊照片";
+
+// Tips Section
+"settings.tips.header" = "提示";
+"settings.tips.resetTooltips" = "重設提示橫幅";
+"settings.tips.footer" = "在整個應用程式中再次顯示有用的提示橫幅。";
+
+// About Section
+"settings.about.header" = "關於";
+"settings.about.privacyTitle" = "隱私保護";
+"settings.about.privacyDescription" = "使用所選的隱私模式隱藏臉部。模糊模式使用無法還原或重建的像素化處理。";
+
+// Alerts
+"alert.deleteAll.title" = "刪除所有模糊照片?";
+"alert.deleteAll.message" = "這將從您的照片圖庫中永久刪除 %d 張模糊照片。此操作無法復原。";
+"alert.deleteAll.confirm" = "全部刪除";
+"alert.clearHistory.title" = "清除追蹤記錄?";
+"alert.clearHistory.message" = "這只會清除追蹤記錄。模糊照片將保留在您的照片圖庫中。";
+"alert.clearHistory.confirm" = "清除";
+"alert.deletionComplete.title" = "刪除完成";
+"alert.deletionComplete.message" = "成功刪除 %d 張照片。%d 張失敗。";
+"alert.ok" = "好";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "模糊照片";
+"blurredPhotosList.itemTitle" = "模糊照片";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "輕";
+"blurIntensity.medium" = "中";
+"blurIntensity.strong" = "強";
+"blurIntensity.maximum" = "最大";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "設定";
+"accessibility.saveButton" = "儲存照片";
+"accessibility.undoButton" = "復原上一步操作";
+"accessibility.selectAllButton" = "選取所有區域";
+"accessibility.clearSelectionButton" = "清除選取";
+"accessibility.resetZoomButton" = "重設縮放和位置";
+"accessibility.addRegionButton" = "新增自訂區域";
+"accessibility.blurButton" = "模糊選取區域";
+"accessibility.coverButton" = "遮蓋選取區域";
+"accessibility.deleteRegionButton" = "刪除區域";
+"accessibility.dismissTooltip" = "關閉提示";
+"accessibility.photoThumbnail" = "照片縮圖";
+"accessibility.blurredPhotoThumbnail" = "模糊照片縮圖";
+"accessibility.faceRegion" = "臉部區域";
+"accessibility.selectedFaceRegion" = "已選取的臉部區域";
+"accessibility.blurredFaceRegion" = "已模糊的臉部區域";
+"accessibility.resizeHandle" = "調整大小控點";
+"accessibility.intensitySlider" = "模糊強度滑桿";
+"accessibility.colorPicker" = "方框顏色選擇器";
+"accessibility.privacyModeOption" = "%@ 隱私模式";
+"accessibility.selectedPrivacyMode" = "%@ 隱私模式，已選取";
+"accessibility.zoomLevel" = "縮放級別 %d 百分比";
+"accessibility.continueButton" = "繼續請求照片存取權限";
+"accessibility.openSettingsButton" = "開啟裝置設定";

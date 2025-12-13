@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Ukrainian)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "Фото";
+"navigation.settings" = "Налаштування";
+"navigation.save" = "Зберегти";
+"navigation.cancel" = "Скасувати";
+"navigation.done" = "Готово";
+"navigation.back" = "Назад";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "Фото";
+"photoGrid.noPhotos.title" = "Немає фото";
+"photoGrid.noPhotos.description" = "Ваша фотобібліотека порожня";
+"photoGrid.accessRequired.title" = "Потрібен доступ до фото";
+"photoGrid.accessRequired.description" = "Будь ласка, надайте доступ до ваших фото в Налаштуваннях, щоб використовувати цей додаток";
+"photoGrid.openSettings" = "Відкрити Налаштування";
+"photoGrid.loading" = "Завантаження фото...";
+"photoGrid.tooltip" = "Торкніться фото, щоб вибрати його для редагування";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "Доступ до Фотобібліотеки";
+"prePermission.browse.title" = "Перегляд Ваших Фото";
+"prePermission.browse.description" = "Виберіть фото з вашої бібліотеки для захисту облич та особистих даних.";
+"prePermission.save.title" = "Збереження Захищених Фото";
+"prePermission.save.description" = "Зберігайте розмиті фото назад у вашу бібліотеку як нові копії.";
+"prePermission.privacy.title" = "Ваша Конфіденційність Важлива";
+"prePermission.privacy.description" = "Фото обробляються на вашому пристрої. Нічого не завантажується на сервер.";
+"prePermission.continue" = "Продовжити";
+"prePermission.changeInSettings" = "Ви можете змінити це пізніше в Налаштуваннях";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "Завантаження...";
+"photoEdit.saving" = "Збереження...";
+"photoEdit.saved.title" = "Збережено!";
+"photoEdit.saved.message" = "Фото успішно збережено";
+"photoEdit.error.title" = "Помилка";
+"photoEdit.saveDialog.title" = "Зберегти Фото";
+"photoEdit.saveToPhotos" = "Зберегти копію у Фото";
+"photoEdit.saveToFiles" = "Зберегти у Файли";
+"photoEdit.tooltip.blur" = "Торкніться обличчя, щоб вибрати його, потім натисніть Розмити";
+"photoEdit.tooltip.cover" = "Торкніться обличчя, щоб вибрати його, потім натисніть Закрити";
+"photoEdit.regions" = "%d областей";
+"photoEdit.selected" = "%d вибрано";
+"photoEdit.blurred" = "%d розмито";
+"photoEdit.intensity" = "Інтенсивність:";
+"photoEdit.undo" = "Скасувати";
+"photoEdit.selectAll" = "Всі";
+"photoEdit.clearSelection" = "Очистити";
+"photoEdit.resetZoom" = "Скинути";
+"photoEdit.addRegion" = "Додати";
+"photoEdit.blur" = "Розмити";
+"photoEdit.cover" = "Закрити";
+"photoEdit.delete" = "Видалити";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "Налаштування";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "Режим Конфіденційності";
+"settings.privacyMode.footer" = "Виберіть спосіб приховування облич. Режими розмиття незворотно знищують риси обличчя. Режими рамки закривають обличчя суцільним кольором.";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "Повне Розмиття";
+"privacyMode.fullBlur.description" = "Піксельація → Розмиття → Піксельація (максимальний захист)";
+"privacyMode.blurNoFinalPixelate" = "Розмиття (Без Фінальної Піксельації)";
+"privacyMode.blurNoFinalPixelate.description" = "Піксельація → Розмиття (м'якший вигляд)";
+"privacyMode.pixelateOnly" = "Лише Піксельація";
+"privacyMode.pixelateOnly.description" = "Лише піксельація (класична мозаїка)";
+"privacyMode.blackBox" = "Чорна Рамка";
+"privacyMode.blackBox.description" = "Суцільний чорний прямокутник";
+"privacyMode.whiteBox" = "Біла Рамка";
+"privacyMode.whiteBox.description" = "Суцільний білий прямокутник";
+"privacyMode.customBox" = "Рамка Власного Кольору";
+"privacyMode.customBox.description" = "Суцільний колір на ваш вибір";
+
+// Custom Color Section
+"settings.customColor.header" = "Власний Колір";
+"settings.customColor.footer" = "Виберіть власний колір для рамки, що закриває обличчя.";
+"settings.customColor.picker" = "Колір Рамки";
+
+// Statistics Section
+"settings.statistics.header" = "Статистика";
+"settings.statistics.blurredCount" = "Кількість Розмитих Фото";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "Керування Розмитими Фото";
+"settings.managePhotos.footer" = "'Видалити Всі Розмиті Фото' назавжди видалить розмиті копії, які ви створили, з вашої Фотобібліотеки. 'Очистити Історію' видаляє лише дані відстеження, не видаляючи фото.";
+"settings.managePhotos.deleteAll" = "Видалити Всі Розмиті Фото з Фото";
+"settings.managePhotos.clearHistory" = "Очистити Історію Відстеження";
+
+// History Section
+"settings.history.header" = "Історія";
+"settings.history.viewPhotos" = "Переглянути Розмиті Фото";
+
+// Tips Section
+"settings.tips.header" = "Підказки";
+"settings.tips.resetTooltips" = "Скинути Підказки";
+"settings.tips.footer" = "Показати корисні банери підказок знову по всьому додатку.";
+
+// About Section
+"settings.about.header" = "Про Додаток";
+"settings.about.privacyTitle" = "Захист Конфіденційності";
+"settings.about.privacyDescription" = "Обличчя приховуються з використанням вибраного режиму конфіденційності. Режими розмиття використовують піксельацію, яку не можна скасувати або відновити.";
+
+// Alerts
+"alert.deleteAll.title" = "Видалити Всі Розмиті Фото?";
+"alert.deleteAll.message" = "Це назавжди видалить %d розмитих фото з вашої Фотобібліотеки. Цю дію не можна скасувати.";
+"alert.deleteAll.confirm" = "Видалити Все";
+"alert.clearHistory.title" = "Очистити Історію Відстеження?";
+"alert.clearHistory.message" = "Це очистить лише історію відстеження. Розмиті фото залишаться у вашій Фотобібліотеці.";
+"alert.clearHistory.confirm" = "Очистити";
+"alert.deletionComplete.title" = "Видалення Завершено";
+"alert.deletionComplete.message" = "Успішно видалено %d фото. %d не вдалося.";
+"alert.ok" = "OK";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "Розмиті Фото";
+"blurredPhotosList.itemTitle" = "Розмите Фото";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "Легка";
+"blurIntensity.medium" = "Середня";
+"blurIntensity.strong" = "Сильна";
+"blurIntensity.maximum" = "Максимальна";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "Налаштування";
+"accessibility.saveButton" = "Зберегти фото";
+"accessibility.undoButton" = "Скасувати останню дію";
+"accessibility.selectAllButton" = "Вибрати всі області";
+"accessibility.clearSelectionButton" = "Очистити вибір";
+"accessibility.resetZoomButton" = "Скинути масштаб і положення";
+"accessibility.addRegionButton" = "Додати власну область";
+"accessibility.blurButton" = "Розмити вибрані області";
+"accessibility.coverButton" = "Закрити вибрані області";
+"accessibility.deleteRegionButton" = "Видалити область";
+"accessibility.dismissTooltip" = "Закрити підказку";
+"accessibility.photoThumbnail" = "Мініатюра фото";
+"accessibility.blurredPhotoThumbnail" = "Мініатюра розмитого фото";
+"accessibility.faceRegion" = "Область обличчя";
+"accessibility.selectedFaceRegion" = "Вибрана область обличчя";
+"accessibility.blurredFaceRegion" = "Розмита область обличчя";
+"accessibility.resizeHandle" = "Ручка зміни розміру";
+"accessibility.intensitySlider" = "Повзунок інтенсивності розмиття";
+"accessibility.colorPicker" = "Вибір кольору рамки";
+"accessibility.privacyModeOption" = "Режим конфіденційності %@";
+"accessibility.selectedPrivacyMode" = "Режим конфіденційності %@, вибрано";
+"accessibility.zoomLevel" = "Рівень масштабу %d відсотків";
+"accessibility.continueButton" = "Продовжити для запиту доступу до фото";
+"accessibility.openSettingsButton" = "Відкрити налаштування пристрою";

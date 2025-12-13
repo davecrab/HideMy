@@ -12,40 +12,27 @@ class FaceDetector {
             return []
         }
 
-        return await withCheckedContinuation { continuation in
-            let request = VNDetectFaceRectanglesRequest { request, error in
-                if let error = error {
-                    print("Face detection error: \(error.localizedDescription)")
-                    continuation.resume(returning: [])
-                    return
-                }
+        let request = VNDetectFaceRectanglesRequest()
+        request.revision = VNDetectFaceRectanglesRequestRevision3
 
-                guard let observations = request.results as? [VNFaceObservation] else {
-                    continuation.resume(returning: [])
-                    return
-                }
+        let handler = VNImageRequestHandler(
+            cgImage: cgImage, orientation: imageOrientation(from: image), options: [:])
 
-                let faces = observations.map { observation in
-                    // Expand bounding box slightly for better coverage
-                    let expandedBounds = expandBoundingBox(observation.boundingBox, by: 0.1)
-                    return DetectedFace(bounds: expandedBounds)
-                }
+        do {
+            try handler.perform([request])
+        } catch {
+            print("Failed to perform face detection: \(error.localizedDescription)")
+            return []
+        }
 
-                continuation.resume(returning: faces)
-            }
+        guard let observations = request.results else {
+            return []
+        }
 
-            // Configure request for accuracy
-            request.revision = VNDetectFaceRectanglesRequestRevision3
-
-            let handler = VNImageRequestHandler(
-                cgImage: cgImage, orientation: imageOrientation(from: image), options: [:])
-
-            do {
-                try handler.perform([request])
-            } catch {
-                print("Failed to perform face detection: \(error.localizedDescription)")
-                continuation.resume(returning: [])
-            }
+        return observations.map { observation in
+            // Expand bounding box slightly for better coverage
+            let expandedBounds = expandBoundingBox(observation.boundingBox, by: 0.1)
+            return DetectedFace(bounds: expandedBounds)
         }
     }
 
@@ -57,37 +44,26 @@ class FaceDetector {
             return []
         }
 
-        return await withCheckedContinuation { continuation in
-            let request = VNDetectFaceLandmarksRequest { request, error in
-                if let error = error {
-                    print("Face landmarks detection error: \(error.localizedDescription)")
-                    continuation.resume(returning: [])
-                    return
-                }
+        let request = VNDetectFaceLandmarksRequest()
 
-                guard let observations = request.results as? [VNFaceObservation] else {
-                    continuation.resume(returning: [])
-                    return
-                }
+        let handler = VNImageRequestHandler(
+            cgImage: cgImage, orientation: imageOrientation(from: image), options: [:])
 
-                let faces = observations.map { observation in
-                    // Expand the bounding box slightly to ensure full face coverage
-                    let expandedBounds = expandBoundingBox(observation.boundingBox, by: 0.15)
-                    return DetectedFace(bounds: expandedBounds)
-                }
+        do {
+            try handler.perform([request])
+        } catch {
+            print("Failed to perform face landmarks detection: \(error.localizedDescription)")
+            return []
+        }
 
-                continuation.resume(returning: faces)
-            }
+        guard let observations = request.results else {
+            return []
+        }
 
-            let handler = VNImageRequestHandler(
-                cgImage: cgImage, orientation: imageOrientation(from: image), options: [:])
-
-            do {
-                try handler.perform([request])
-            } catch {
-                print("Failed to perform face landmarks detection: \(error.localizedDescription)")
-                continuation.resume(returning: [])
-            }
+        return observations.map { observation in
+            // Expand the bounding box slightly to ensure full face coverage
+            let expandedBounds = expandBoundingBox(observation.boundingBox, by: 0.15)
+            return DetectedFace(bounds: expandedBounds)
         }
     }
 

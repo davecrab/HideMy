@@ -1,0 +1,158 @@
+/*
+  Localizable.strings (Spanish)
+  HideMy
+*/
+
+// MARK: - App General
+"app.name" = "HideMy";
+
+// MARK: - Navigation
+"navigation.photos" = "Fotos";
+"navigation.settings" = "Ajustes";
+"navigation.save" = "Guardar";
+"navigation.cancel" = "Cancelar";
+"navigation.done" = "Hecho";
+"navigation.back" = "Atrás";
+
+// MARK: - Photo Grid View
+"photoGrid.title" = "Fotos";
+"photoGrid.noPhotos.title" = "Sin Fotos";
+"photoGrid.noPhotos.description" = "Tu biblioteca de fotos está vacía";
+"photoGrid.accessRequired.title" = "Acceso a Fotos Requerido";
+"photoGrid.accessRequired.description" = "Por favor, permite el acceso a tus fotos en Ajustes para usar esta app";
+"photoGrid.openSettings" = "Abrir Ajustes";
+"photoGrid.loading" = "Cargando Fotos...";
+"photoGrid.tooltip" = "Toca una foto para seleccionarla y editarla";
+
+// MARK: - Pre-Permission View
+"prePermission.title" = "Acceso a la Biblioteca de Fotos";
+"prePermission.browse.title" = "Explora Tus Fotos";
+"prePermission.browse.description" = "Selecciona fotos de tu biblioteca para proteger rostros e identidades.";
+"prePermission.save.title" = "Guarda Fotos Protegidas";
+"prePermission.save.description" = "Guarda las fotos difuminadas en tu biblioteca como copias nuevas.";
+"prePermission.privacy.title" = "Tu Privacidad Importa";
+"prePermission.privacy.description" = "Las fotos se procesan en tu dispositivo. Nada se sube a ningún servidor.";
+"prePermission.continue" = "Continuar";
+"prePermission.changeInSettings" = "Puedes cambiar esto más tarde en Ajustes";
+
+// MARK: - Photo Edit View
+"photoEdit.loading" = "Cargando...";
+"photoEdit.saving" = "Guardando...";
+"photoEdit.saved.title" = "¡Guardado!";
+"photoEdit.saved.message" = "Foto guardada correctamente";
+"photoEdit.error.title" = "Error";
+"photoEdit.saveDialog.title" = "Guardar Foto";
+"photoEdit.saveToPhotos" = "Guardar Copia en Fotos";
+"photoEdit.saveToFiles" = "Guardar en Archivos";
+"photoEdit.tooltip.blur" = "Toca un rostro para seleccionarlo, luego presiona Difuminar";
+"photoEdit.tooltip.cover" = "Toca un rostro para seleccionarlo, luego presiona Cubrir";
+"photoEdit.regions" = "%d regiones";
+"photoEdit.selected" = "%d seleccionadas";
+"photoEdit.blurred" = "%d difuminadas";
+"photoEdit.intensity" = "Intensidad:";
+"photoEdit.undo" = "Deshacer";
+"photoEdit.selectAll" = "Todo";
+"photoEdit.clearSelection" = "Limpiar";
+"photoEdit.resetZoom" = "Restab.";
+"photoEdit.addRegion" = "Añadir";
+"photoEdit.blur" = "Difuminar";
+"photoEdit.cover" = "Cubrir";
+"photoEdit.delete" = "Eliminar";
+"photoEdit.zoom" = "%d%%";
+
+// MARK: - Settings View
+"settings.title" = "Ajustes";
+
+// Privacy Mode Section
+"settings.privacyMode.header" = "Modo de Privacidad";
+"settings.privacyMode.footer" = "Elige cómo ocultar los rostros. Los modos de difuminado destruyen las características faciales de forma irreversible. Los modos de caja cubren los rostros con un color sólido.";
+
+// Privacy Modes
+"privacyMode.fullBlur" = "Difuminado Completo";
+"privacyMode.fullBlur.description" = "Pixelar → Difuminar → Pixelar (máxima privacidad)";
+"privacyMode.blurNoFinalPixelate" = "Difuminar (Sin Pixelado Final)";
+"privacyMode.blurNoFinalPixelate.description" = "Pixelar → Difuminar (aspecto más suave)";
+"privacyMode.pixelateOnly" = "Solo Pixelar";
+"privacyMode.pixelateOnly.description" = "Solo pixelado (mosaico clásico)";
+"privacyMode.blackBox" = "Caja Negra";
+"privacyMode.blackBox.description" = "Rectángulo negro sólido";
+"privacyMode.whiteBox" = "Caja Blanca";
+"privacyMode.whiteBox.description" = "Rectángulo blanco sólido";
+"privacyMode.customBox" = "Caja de Color Personalizado";
+"privacyMode.customBox.description" = "Color sólido de tu elección";
+
+// Custom Color Section
+"settings.customColor.header" = "Color Personalizado";
+"settings.customColor.footer" = "Selecciona un color personalizado para la caja que cubre el rostro.";
+"settings.customColor.picker" = "Color de Caja";
+
+// Statistics Section
+"settings.statistics.header" = "Estadísticas";
+"settings.statistics.blurredCount" = "Cantidad de Fotos Difuminadas";
+
+// Manage Photos Section
+"settings.managePhotos.header" = "Gestionar Fotos Difuminadas";
+"settings.managePhotos.footer" = "'Eliminar Todas las Fotos Difuminadas' eliminará permanentemente las copias difuminadas que creaste de tu biblioteca de Fotos. 'Borrar Historial' solo elimina los datos de seguimiento sin borrar ninguna foto.";
+"settings.managePhotos.deleteAll" = "Eliminar Todas las Fotos Difuminadas";
+"settings.managePhotos.clearHistory" = "Borrar Historial de Seguimiento";
+
+// History Section
+"settings.history.header" = "Historial";
+"settings.history.viewPhotos" = "Ver Fotos Difuminadas";
+
+// Tips Section
+"settings.tips.header" = "Consejos";
+"settings.tips.resetTooltips" = "Restablecer Consejos";
+"settings.tips.footer" = "Mostrar de nuevo los banners de consejos útiles en toda la app.";
+
+// About Section
+"settings.about.header" = "Acerca de";
+"settings.about.privacyTitle" = "Protección de Privacidad";
+"settings.about.privacyDescription" = "Los rostros se ocultan usando el modo de privacidad seleccionado. Los modos de difuminado usan pixelación que no puede ser revertida o reconstruida.";
+
+// Alerts
+"alert.deleteAll.title" = "¿Eliminar Todas las Fotos Difuminadas?";
+"alert.deleteAll.message" = "Esto eliminará permanentemente %d foto(s) difuminada(s) de tu biblioteca de Fotos. Esta acción no se puede deshacer.";
+"alert.deleteAll.confirm" = "Eliminar Todo";
+"alert.clearHistory.title" = "¿Borrar Historial de Seguimiento?";
+"alert.clearHistory.message" = "Esto solo borrará el historial de seguimiento. Las fotos difuminadas permanecerán en tu biblioteca de Fotos.";
+"alert.clearHistory.confirm" = "Borrar";
+"alert.deletionComplete.title" = "Eliminación Completada";
+"alert.deletionComplete.message" = "Se eliminaron correctamente %d foto(s). %d fallaron.";
+"alert.ok" = "OK";
+
+// Blurred Photos List
+"blurredPhotosList.title" = "Fotos Difuminadas";
+"blurredPhotosList.itemTitle" = "Foto Difuminada";
+
+// MARK: - Blur Intensity
+"blurIntensity.light" = "Ligero";
+"blurIntensity.medium" = "Medio";
+"blurIntensity.strong" = "Fuerte";
+"blurIntensity.maximum" = "Máximo";
+
+// MARK: - Accessibility Labels
+"accessibility.settingsButton" = "Ajustes";
+"accessibility.saveButton" = "Guardar foto";
+"accessibility.undoButton" = "Deshacer última acción";
+"accessibility.selectAllButton" = "Seleccionar todas las regiones";
+"accessibility.clearSelectionButton" = "Limpiar selección";
+"accessibility.resetZoomButton" = "Restablecer zoom y posición";
+"accessibility.addRegionButton" = "Añadir región personalizada";
+"accessibility.blurButton" = "Difuminar regiones seleccionadas";
+"accessibility.coverButton" = "Cubrir regiones seleccionadas";
+"accessibility.deleteRegionButton" = "Eliminar región";
+"accessibility.dismissTooltip" = "Descartar consejo";
+"accessibility.photoThumbnail" = "Miniatura de foto";
+"accessibility.blurredPhotoThumbnail" = "Miniatura de foto difuminada";
+"accessibility.faceRegion" = "Región de rostro";
+"accessibility.selectedFaceRegion" = "Región de rostro seleccionada";
+"accessibility.blurredFaceRegion" = "Región de rostro difuminada";
+"accessibility.resizeHandle" = "Control de redimensionado";
+"accessibility.intensitySlider" = "Control de intensidad de difuminado";
+"accessibility.colorPicker" = "Selector de color de caja";
+"accessibility.privacyModeOption" = "Modo de privacidad %@";
+"accessibility.selectedPrivacyMode" = "Modo de privacidad %@, seleccionado";
+"accessibility.zoomLevel" = "Nivel de zoom %d por ciento";
+"accessibility.continueButton" = "Continuar para solicitar acceso a fotos";
+"accessibility.openSettingsButton" = "Abrir ajustes del dispositivo";
